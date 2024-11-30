@@ -1,5 +1,6 @@
 class Graph:
     def __init__(self, n, edges=None):
+        # adjacency list mapping vert -> incident edges
         self.graph = {}
         self.nodes = set()
         for i in range(n):
