@@ -1,20 +1,42 @@
 class Graph:
     def __init__(self, n, edges=None):
         # adjacency list mapping vert -> incident edges
+        self.numberOfNodes = n
+        self.numberOfEdges = 0
         self.graph = {}
+        self.graphBiDirection = {}
         self.nodes = set()
         for i in range(n):
             self.graph[i] = []
+            self.graphBiDirection[i] = []
             self.nodes.add(i)
         if edges:
             for i in edges:
+                self.numberOfEdges+=1
                 self.graph[i[0]].append(i[1])
                 # To make it undirected, could potentially remove, would require modifications in other parts of the code
                 # but could be worthwhile if we have to constantly keep accounting for it
-                self.graph[i[1]].append(i[0]) 
+                self.graphBiDirection[i[0]].append(i[1])
+                self.graphBiDirection[i[1]].append(i[0]) 
     def __str__(self):
         return "{}".format(self.graph)
     
+    def add_edge(self, edge):
+        self.graph[edge[0]].append(edge[1])
+        self.graphBiDirection[edge[0]].append(edge[1])
+        self.graphBiDirection[edge[1]].append(edge[0]) 
+        self.numberOfEdges+=1
+    def remove_edge(self, edge):
+        if edge[0] in self.graph and edge[1] in self.graph[edge[0]]:
+            self.graph[edge[0]].remove(edge[1])
+            self.graphBiDirection[edge[0]].remove(edge[1])
+            self.graphBiDirection[edge[1]].remove(edge[0])
+            self.numberOfEdges-=1
+        if edge[1] in self.graph and edge[0] in self.graph[edge[1]]:
+            self.graph[edge[1]].remove(edge[0])
+            self.graphBiDirection[edge[0]].remove(edge[1])
+            self.graphBiDirection[edge[1]].remove(edge[0])
+            self.numberOfEdges-=1      
     def print_gv(self):
         '''
         Prints the code for the current that can be copy-pasted into graphviz for visualization
@@ -24,7 +46,18 @@ class Graph:
         print("edge [dir = none]")
         for u in self.graph:
             for v in self.graph[u]:
-                if v>u: # To account for birectionality, since we do not need to add 2 edges in graphviz, we can ignore the repeated ones
+                print(u, "->", v)
+        print("}")
+    def print_gv_bi(self):
+        '''
+        Prints the code for the current that can be copy-pasted into graphviz for visualization
+        '''
+        # for use with visualizer: https://dreampuf.github.io/GraphvizOnline/#digraph%20G
+        print("digraph G {")
+        print("edge [dir = none]")
+        for u in self.graph:
+            for v in self.graphBiDirection[u]:
+                if v>u:
                     print(u, "->", v)
         print("}")
 
@@ -56,6 +89,8 @@ class Graph:
     
 
     
+
+    
     
     
 def test_checker():
@@ -69,7 +104,7 @@ def test_checker():
     print(a.st_checker(a)) #Expected: False
     print(a.st_checker(a_tree3)) #Expected: False
     b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
-    b.print_gv()
+    b.print_gv_bi()
     b_tree = Graph(6, [(0,1), (1,2),(1,3),(2,4),(4,5)])
     b_tree2 = Graph(6, [(0,1), (1,2),(1,3),(2,4),(3,5)])
     b_tree3 = Graph(6, [(0,1), (1,2),(2,3),(2,4),(3,5)])
@@ -81,6 +116,11 @@ def test_checker():
     print(b.st_checker(b_tree4)) #Expected: False
     print(b.st_checker(b_tree5)) #Expected: False
     print(b.st_checker(a_tree)) #Expected: False
+    b.print_gv_bi()
+    b.remove_edge((1,3))
+    b.print_gv_bi()
+    b.add_edge((0,3))
+    b.print_gv_bi()
 
 if __name__ == "__main__":
     test_checker()
