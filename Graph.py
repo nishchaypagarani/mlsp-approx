@@ -36,7 +36,19 @@ class Graph:
             self.graph[edge[1]].remove(edge[0])
             self.graphBiDirection[edge[0]].remove(edge[1])
             self.graphBiDirection[edge[1]].remove(edge[0])
-            self.numberOfEdges-=1      
+            self.numberOfEdges-=1
+
+    def delete_node(self, node: int):
+        if node in self.graphBiDirection:
+            self.numberOfNodes-=1
+            self.numberOfEdges-=len(self.graphBiDirection[node])
+            for i in self.graphBiDirection[node]:
+                self.graphBiDirection[i].remove(node)
+                if i in self.graph and node in self.graph[i]:
+                    self.graph[i].remove(node)
+            self.graph.pop(node)
+            self.graphBiDirection.pop(node)
+
     def print_gv(self):
         '''
         Prints the code for the current that can be copy-pasted into graphviz for visualization
@@ -147,6 +159,28 @@ def test_is_connected():
     print(b.is_connected())
     print(c.is_connected())
     print(d.is_connected())
+def test_delete_node():
+    a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
+    a.print_gv_bi()
+    a.delete_node(1)
+    a.print_gv_bi()
+    print(a.graph)
+    print(a.graphBiDirection)
+    b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    b.print_gv_bi()
+    b.delete_node(2)
+    b.print_gv_bi()
+    print(b.graph)
+    print(b.graphBiDirection)
+    c = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    c.print_gv_bi()
+    c.delete_node(0)
+    c.delete_node(5)
+    c.delete_node(4)
+    c.print_gv_bi()
+    print(c.graph)
+    print(c.graphBiDirection)
+
 
 if __name__ == "__main__":
-    test_is_connected()
+    test_delete_node()
