@@ -86,7 +86,17 @@ class Graph:
         if error or visited!=self.nodes:
             return False
         return True
-    
+    def explore_is_connected(self,u, visited):
+        visited.add(u)
+        for v in self.graph[u]:
+            if v not in visited:
+                self.explore_is_connected(v,visited)
+    def is_connected(self):
+        visited = set()
+        self.explore_is_connected(0,visited)
+        if visited!=self.nodes:
+            return False
+        return True
 
     
 
@@ -95,7 +105,6 @@ class Graph:
     
 def test_checker():
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
-    a.print_gv()
     a_tree=Graph(5, [(0,1), (1,2), (2,3), (2,4)])
     a_tree2=Graph(5, [(0,1), (1,2), (1,3), (2,4)])
     a_tree3=Graph(5, [(0,1), (1,2), (1,3)])
@@ -122,5 +131,22 @@ def test_checker():
     b.add_edge((0,3))
     b.print_gv_bi()
 
+def test_is_connected():
+    a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
+    a.print_gv()
+    a_tree=Graph(5, [(0,1), (1,2), (2,3), (2,4)])
+    a_tree2=Graph(5, [(0,1), (1,2), (1,3), (2,4)])
+    a_tree3=Graph(5, [(0,1), (1,2), (1,3)])
+    b = Graph(5, [(1,2),(1,3),(2,3),(2,4)])
+    c = Graph(5, [(0,1), (1,2),(1,3),(2,3)])
+    d = Graph(6, [(0,1),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    print(a.is_connected())
+    print(a_tree.is_connected())
+    print(a_tree2.is_connected())
+    print(a_tree3.is_connected())
+    print(b.is_connected())
+    print(c.is_connected())
+    print(d.is_connected())
+
 if __name__ == "__main__":
-    test_checker()
+    test_is_connected()
