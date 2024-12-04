@@ -198,7 +198,24 @@ def gen_output(filename, outputs: list[tuple[Graph, int]]):
                 for u in sorted(edges):
                     if u>v:
                         my_file.write(f"{v} {u}\n")
-        
+
+def gen_hard_in(filename):
+    a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
+    b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
+    d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
+    e = Graph(2, [(0,1)])
+    testcases = [a,b,c,d,e]
+    with open(filename, "w") as my_file:
+        my_file.write(f"{len(testcases)}\n")
+        for o in testcases:
+            graph: Graph = o
+            my_file.write(f"{graph.numberOfNodes} {graph.numberOfEdges}\n")
+            for v,edges in graph.graphBiDirection.items():
+                for u in sorted(edges):
+                    if u>v:
+                        my_file.write(f"{v} {u}\n")
 if __name__ == "__main__":
     # test_st_greedy_ds()
+    gen_hard_in("hard.in")
     get_input("hard.in")
