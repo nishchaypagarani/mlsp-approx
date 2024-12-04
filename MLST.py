@@ -36,6 +36,40 @@ def find_st_bf(graph: Graph, remainingGraph: Graph, fixedGraph: Graph):
             remainingGraph.add_edge((u,v))
     return (maxLeaves, bestGraph)
 
+def find_st_greedy_ds(graph: Graph):
+    stGraph = Graph(graph.numberOfNodes, [])
+    ds = set()
+    lvs = set()
+    maxNeighbors = len(graph.graphBiDirection[0])
+    maxNeighborNode = 0
+    for v in graph.graphBiDirection[0]:
+        if len(graph.graphBiDirection[v])>maxNeighbors:
+            maxNeighbors = len(graph.graphBiDirection[v])
+            maxNeighborNode = v
+    ds.add(maxNeighborNode)
+    for v in graph.graphBiDirection[maxNeighborNode]:
+        lvs.add(v)
+        stGraph.add_edge((maxNeighborNode,v))
+    while ds.union(lvs)!=graph.nodes:
+        maxNeighbors = -1
+        maxNeighborNode = -1
+        ss = ds.union(lvs)        
+        for v in lvs:
+            validNeighborCnt = 0
+            for j in graph.graphBiDirection[v]:
+                if j not in ss:
+                    validNeighborCnt+=1
+            if validNeighborCnt>maxNeighbors:
+                maxNeighbors = validNeighborCnt
+                maxNeighborNode = v
+        lvs.remove(maxNeighborNode)
+        ds.add(maxNeighborNode)
+        for j in graph.graphBiDirection[maxNeighborNode]:
+            if j not in ss:
+                lvs.add(j)
+                stGraph.add_edge((maxNeighborNode,j))
+    leaves = calculate_number_of_leaves(stGraph)
+    return (leaves,stGraph)
 # TODO: ensembler
 
 
@@ -77,6 +111,7 @@ def test_brute_force():
     b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
     c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
     d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
+    e = Graph(2, [(0,1)])
     print("\n\n\n Test case A: ")
     a.print_gv_bi()
     (a_leaves, a_tree_opt) = find_st_bf(a,copy.deepcopy(a),Graph(a.numberOfNodes, []))
@@ -97,6 +132,44 @@ def test_brute_force():
     (d_leaves, d_tree_opt) = find_st_bf(d,copy.deepcopy(d),Graph(d.numberOfNodes, []))
     print(d_leaves)
     d_tree_opt.print_gv_bi()
+    print("\n\n\n Test case E: ")
+    e.print_gv_bi()
+    (e_leaves, e_tree_opt) = find_st_bf(e,copy.deepcopy(e),Graph(e.numberOfNodes, []))
+    print(e_leaves)
+    e_tree_opt.print_gv_bi()
+
+def test_st_greedy_ds():
+    a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
+    b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
+    d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
+    e = Graph(2, [(0,1)])
+    print("\n\n\n Test case A: ")
+    a.print_gv_bi()
+    (a_leaves, a_tree_opt) = find_st_greedy_ds(a)
+    print(a_leaves)
+    a_tree_opt.print_gv_bi()
+    print("\n\n\n Test case B: ")
+    b.print_gv_bi()
+    (b_leaves, b_tree_opt) = find_st_greedy_ds(b)
+    print(b_leaves)
+    b_tree_opt.print_gv_bi()
+    print("\n\n\n Test case C: ")
+    c.print_gv_bi()
+    (c_leaves, c_tree_opt) = find_st_greedy_ds(c)
+    print(c_leaves)
+    c_tree_opt.print_gv_bi()
+    print("\n\n\n Test case D: ")
+    d.print_gv_bi()
+    (d_leaves, d_tree_opt) = find_st_greedy_ds(d)
+    print(d_leaves)
+    d_tree_opt.print_gv_bi()
+    print("\n\n\n Test case E: ")
+    e.print_gv_bi()
+    find_st_greedy_ds(e)
+    (e_leaves, e_tree_opt) = find_st_greedy_ds(e)
+    print(e_leaves)
+    e_tree_opt.print_gv_bi()
 
 if __name__ == "__main__":
-    test_brute_force()
+    test_st_greedy_ds()
