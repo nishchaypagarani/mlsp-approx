@@ -170,6 +170,35 @@ def test_st_greedy_ds():
     (e_leaves, e_tree_opt) = find_st_greedy_ds(e)
     print(e_leaves)
     e_tree_opt.print_gv_bi()
-
+    # outputs = [(a_tree_opt, a_leaves),(b_tree_opt, b_leaves),(c_tree_opt, c_leaves),(d_tree_opt, d_leaves),(e_tree_opt, e_leaves)]
+    # gen_output("hard.out", outputs)
+    # outputs = [(a, 5),(b, 6),(c, 6),(d, 6),(e, 2)]
+    # gen_output("hard.out", outputs)
+def get_input(filename):
+    graphs: list[Graph] = list()
+    with open(filename) as my_file:
+        n = int(my_file.readline())
+        for i in range(n):
+            current_graph = list(map(int, my_file.readline().split()))
+            current_edges = []
+            for j in range(current_graph[1]):
+                new_edge = list(map(int, my_file.readline().split()))
+                current_edges.append(new_edge)
+            graphs.append(Graph(current_graph[0], current_edges))
+        # for i in graphs:
+        #     i.print_gv_bi()
+    return graphs
+def gen_output(filename, outputs: list[tuple[Graph, int]]):
+    with open(filename, "w") as my_file:
+        for o in outputs:
+            graph: Graph = o[0]
+            leaves = o[1]
+            my_file.write(f"{leaves} {graph.numberOfEdges}\n")
+            for v,edges in graph.graphBiDirection.items():
+                for u in sorted(edges):
+                    if u>v:
+                        my_file.write(f"{v} {u}\n")
+        
 if __name__ == "__main__":
-    test_st_greedy_ds()
+    # test_st_greedy_ds()
+    get_input("hard.in")
