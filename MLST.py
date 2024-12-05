@@ -328,4 +328,4 @@ if __name__ == "__main__":
     sols_ensembler = ensembler(inps)
     # test_ensembler(inps)
     # sols = solve_using_greedy(inps)
-    # gen_output("test-ensembler-hard.out",sols)
+    gen_output("hard.out", sols_ensembler)
