@@ -70,6 +70,13 @@ def find_st_greedy_ds(graph: Graph):
                 stGraph.add_edge((maxNeighborNode,j))
     leaves = calculate_number_of_leaves(stGraph)
     return (leaves,stGraph)
+
+# Runs a linear program 
+def LP(graph: Graph, init_tr: Graph):
+
+
+
+
 # TODO: ensembler
 
 
