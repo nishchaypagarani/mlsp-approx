@@ -70,8 +70,6 @@ def find_st_greedy_ds(graph: Graph):
                 stGraph.add_edge((maxNeighborNode,j))
     leaves = calculate_number_of_leaves(stGraph)
     return (leaves,stGraph)
-# TODO: ensembler
-
 
 
 def test_calculate_number_of_leaves():
@@ -247,22 +245,87 @@ def gen_hard_in(filename, additionalGraphs: list[Graph] = []):
 def solve_using_greedy(graphs: list[Graph]):
     sols = []
     for i in range(len(graphs)):
-        print(f"Graph {i}: \n")
+        # print(f"Graph {i}: \n")
         if graphs[i].is_connected():
-            graphs[i].print_gv_bi()
+            # graphs[i].print_gv_bi()
             (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
-            print(f"Greedy Solution Leaves: {greedy_leaves}")
-            print("Greedy Tree: \n")
-            greedy_tree.print_gv_bi()
+            # print(f"Greedy Solution Leaves: {greedy_leaves}")
+            # print("Greedy Tree: \n")
+            # greedy_tree.print_gv_bi()
             sols.append((greedy_tree,greedy_leaves))
         else:
             sols.append((Graph(0,[]),0))
-        print("\n\n\n")
+        # print("\n\n\n")
     return sols
+
+def ensembler(graphs: list[Graph]):
+    sols = []
+    G_len = len(graphs)
+    for i in range(G_len):
+        graph = graphs[i]
+        print(f"{'-'*5} Graph {i+1} / {G_len} {'-'*5}")
+        if graph.is_connected():
+            if graph.numberOfEdges < 10:
+                graph.print_gv_bi()
+            else:
+                print(f"Omitting input graph viz for size - {graph.numberOfEdges} > 10 edges")
+            # If less than four nodes or six edges, use brute force
+            if graph.numberOfNodes <= 4 or graph.numberOfEdges <= 6:
+                print("Going with brute force")
+                (bf_leaves, bf_tree) = find_st_bf(graph, copy.deepcopy(graph), Graph(graph.numberOfNodes))
+                print(f"Final Leaves: {bf_leaves}")
+                print("Final Tree:")
+                bf_tree.print_gv_bi()
+                sols.append((bf_tree, bf_leaves))
+            # otherwise, use other solution we have right now
+            else:
+                print("Too big for brute force")
+                # TODO: when other solvers, loop through them and check if
+                # each soln valid - if so, pick tree w max leaves
+                print("Trying greedy")
+                (greedy_leaves, greedy_tree) = find_st_greedy_ds(graph)
+                print("Going with greedy")
+                print(f"Final Leaves: {greedy_leaves}")
+                print("Final Tree:")
+                if greedy_tree.numberOfEdges < 10:
+                    greedy_tree.print_gv_bi()
+                else:
+                    print(f"Omitting solution graph viz for size - {greedy_tree.numberOfEdges} > 10 edges")
+                sols.append((greedy_tree,greedy_leaves))
+        else:
+            print(f"Graph is unconnected.")
+            sols.append((Graph(0,[]),0))
+        # print("\n")
+    return sols
+
+def test_ensembler(inps):
+    sols_ens = ensembler(inps)
+    sols_greedy = solve_using_greedy(inps)
+    # for sol in range(len())
+    assert len(sols_ens) == len(sols_greedy)
+    for i in range(len(sols_ens)):
+        ens_tree, ens_leaves = sols_ens[i]
+        greedy_tree, greedy_leaves = sols_greedy[i]
+        print(f"Testing agreement on graph {i+1} / {len(inps)}")
+        if ens_leaves != greedy_leaves:
+            print(f"Difference on graph {i}")
+            inps[i].print_gv_bi()
+            print(f"Ensembler leaves {ens_leaves}, Greedy leaves {greedy_leaves}")
+            if greedy_tree.numberOfNodes < 10:
+                print("Ensembler tree:")
+                ens_tree.print_gv_bi()
+                print("Greedy tree:")
+                greedy_tree.print_gv_bi()
+            return
+    print("All tests passed")
+            # printf("Ensembler solution l")
+
 if __name__ == "__main__":
     # test_st_greedy_ds()
     fi_cases = get_input("fi_hard.in")
     gen_hard_in("hard.in", fi_cases)
     inps = get_input("hard.in")
-    sols = solve_using_greedy(inps)
-    gen_output("hard.out",sols)
+    sols_ensembler = ensembler(inps)
+    # test_ensembler(inps)
+    # sols = solve_using_greedy(inps)
+    gen_output("hard.out", sols_ensembler)
