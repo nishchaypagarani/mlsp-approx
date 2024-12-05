@@ -73,6 +73,7 @@ def find_st_greedy_ds(graph: Graph):
 # TODO: ensembler
 
 
+
 def test_calculate_number_of_leaves():
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
     a.print_gv()
@@ -228,7 +229,7 @@ def gen_hard_in(filename):
     # m_b.print_gv() 
 
     f = Graph(6,[(0,1), (0,2),(1,3),(2,3),(2,4),(4,5),(3,5)])
-    testcases = [a,b,c,d,e,f,m_b]
+    testcases = [a,b,c,d,e,f,m_a,m_b]
     with open(filename, "w") as my_file:
         my_file.write(f"{len(testcases)}\n")
         for o in testcases:
