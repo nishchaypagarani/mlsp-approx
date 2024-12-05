@@ -179,15 +179,18 @@ def test_st_greedy_ds():
 def solve_and_compare(graphs: list[Graph]):
     for i in range(len(graphs)):
         print(f"Graph {i}: \n")
-        graphs[i].print_gv_bi()
-        (bf_leaves, bf_tree) = find_st_bf(graphs[i], copy.deepcopy(graphs[i]), Graph(graphs[i].numberOfNodes))
-        (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
-        print(f"Brute force solution leaves: {bf_leaves}")
-        print(f"Greedy Solution Leaves: {greedy_leaves}")
-        print("Brute force Tree: \n")
-        bf_tree.print_gv_bi()
-        print("Greedy Tree: \n")
-        greedy_tree.print_gv_bi()
+        if graphs[i].is_connected():
+            graphs[i].print_gv_bi()
+            (bf_leaves, bf_tree) = find_st_bf(graphs[i], copy.deepcopy(graphs[i]), Graph(graphs[i].numberOfNodes))
+            (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
+            print(f"Brute force solution leaves: {bf_leaves}")
+            print(f"Greedy Solution Leaves: {greedy_leaves}")
+            print("Brute force Tree: \n")
+            bf_tree.print_gv_bi()
+            print("Greedy Tree: \n")
+            greedy_tree.print_gv_bi()
+        else:
+            print("Graph not connected")
         print("\n\n\n")
 
 def get_input(filename):
@@ -215,7 +218,7 @@ def gen_output(filename, outputs: list[tuple[Graph, int]]):
                     if u>v:
                         my_file.write(f"{v} {u}\n")
 
-def gen_hard_in(filename):
+def gen_hard_in(filename, additionalGraphs: list[Graph] = []):
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
     b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
     c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
@@ -229,7 +232,9 @@ def gen_hard_in(filename):
     # m_b.print_gv() 
 
     f = Graph(6,[(0,1), (0,2),(1,3),(2,3),(2,4),(4,5),(3,5)])
-    testcases = [a,b,c,d,e,f,m_a,m_b]
+    g = Graph(8,[(0,1),(0,7),(0,5),(1,2),(2,3),(2,4),(2,5),(3,4),(4,5),(4,6),(5,6),(6,7),(1,7),(2,7)])
+    testcases = [a,b,c,d,e,f,m_a,m_b,g]
+    testcases.extend(additionalGraphs)
     with open(filename, "w") as my_file:
         my_file.write(f"{len(testcases)}\n")
         for o in testcases:
@@ -239,8 +244,25 @@ def gen_hard_in(filename):
                 for u in sorted(edges):
                     if u>v:
                         my_file.write(f"{v} {u}\n")
+def solve_using_greedy(graphs: list[Graph]):
+    sols = []
+    for i in range(len(graphs)):
+        print(f"Graph {i}: \n")
+        if graphs[i].is_connected():
+            graphs[i].print_gv_bi()
+            (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
+            print(f"Greedy Solution Leaves: {greedy_leaves}")
+            print("Greedy Tree: \n")
+            greedy_tree.print_gv_bi()
+            sols.append((greedy_tree,greedy_leaves))
+        else:
+            sols.append((Graph(0,[]),0))
+        print("\n\n\n")
+    return sols
 if __name__ == "__main__":
-    test_st_greedy_ds()
-    gen_hard_in("hard.in")
+    # test_st_greedy_ds()
+    fi_cases = get_input("fi_hard.in")
+    gen_hard_in("hard.in", fi_cases)
     inps = get_input("hard.in")
-    solve_and_compare(inps)
+    sols = solve_using_greedy(inps)
+    gen_output("hard.out",sols)
