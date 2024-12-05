@@ -73,6 +73,7 @@ class Graph:
                     print(u, "->", v)
         print("}")
 
+    # TODO: if needed if recursion depth exceeded for large graphs, make iterative
     def explore_st_checker(self, tree, u, parent, visited):
         '''
         Returns True if no error (cycles/erroneous edges were found) in the spanning tree provided for the current graph
