@@ -174,6 +174,21 @@ def test_st_greedy_ds():
     # gen_output("hard.out", outputs)
     # outputs = [(a, 5),(b, 6),(c, 6),(d, 6),(e, 2)]
     # gen_output("hard.out", outputs)
+
+def solve_and_compare(graphs: list[Graph]):
+    for i in range(len(graphs)):
+        print(f"Graph {i}: \n")
+        graphs[i].print_gv_bi()
+        (bf_leaves, bf_tree) = find_st_bf(graphs[i], copy.deepcopy(graphs[i]), Graph(graphs[i].numberOfNodes))
+        (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
+        print(f"Brute force solution leaves: {bf_leaves}")
+        print(f"Greedy Solution Leaves: {greedy_leaves}")
+        print("Brute force Tree: \n")
+        bf_tree.print_gv_bi()
+        print("Greedy Tree: \n")
+        greedy_tree.print_gv_bi()
+        print("\n\n\n")
+
 def get_input(filename):
     graphs: list[Graph] = list()
     with open(filename) as my_file:
@@ -205,7 +220,8 @@ def gen_hard_in(filename):
     c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
     d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
     e = Graph(2, [(0,1)])
-    testcases = [a,b,c,d,e]
+    f = Graph(6,[(0,1), (0,2),(1,3),(2,3),(2,4),(4,5),(3,5)])
+    testcases = [a,b,c,d,e,f]
     with open(filename, "w") as my_file:
         my_file.write(f"{len(testcases)}\n")
         for o in testcases:
@@ -218,4 +234,5 @@ def gen_hard_in(filename):
 if __name__ == "__main__":
     # test_st_greedy_ds()
     gen_hard_in("hard.in")
-    get_input("hard.in")
+    inps = get_input("hard.in")
+    solve_and_compare(inps)
