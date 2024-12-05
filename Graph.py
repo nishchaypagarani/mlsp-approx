@@ -79,8 +79,8 @@ class Graph:
         Returns True if no error (cycles/erroneous edges were found) in the spanning tree provided for the current graph
         '''
         visited.add(u)
-        for v in tree.graph[u]:
-            if v not in self.graph[u]: #To make sure the edges for the tree exist in the graph too
+        for v in tree.graphBiDirection[u]:
+            if v not in self.graphBiDirection[u]: #To make sure the edges for the tree exist in the graph too
                 return True
             if v not in visited:
                 cycle = self.explore_st_checker(tree,v,u,visited)
@@ -184,4 +184,4 @@ def test_delete_node():
 
 
 if __name__ == "__main__":
-    test_delete_node()
+    test_checker()
