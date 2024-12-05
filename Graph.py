@@ -100,7 +100,7 @@ class Graph:
         return True
     def explore_is_connected(self,u, visited):
         visited.add(u)
-        for v in self.graph[u]:
+        for v in self.graphBiDirection[u]:
             if v not in visited:
                 self.explore_is_connected(v,visited)
     def is_connected(self):
