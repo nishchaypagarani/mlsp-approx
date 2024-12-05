@@ -223,10 +223,10 @@ def gen_hard_in(filename):
     m_a = Graph(17, [(1, 2), (2, 3), (1, 4), (4, 6), (6, 0), (0, 7), (7, 5), (5, 3),
                      (1, 8), (2, 9), (14, 0), (16, 7), (4, 11),
                      (8, 11), (9, 12), (10, 13), (8, 9), (9, 10), (12, 15), (14, 15), (15, 16)])
-    m_a.print_gv() 
+    # m_a.print_gv() 
 
     f = Graph(6,[(0,1), (0,2),(1,3),(2,3),(2,4),(4,5),(3,5)])
-    testcases = [a,b,c,d,e,f]
+    testcases = [a,b,c,d,e,f, m_a]
     with open(filename, "w") as my_file:
         my_file.write(f"{len(testcases)}\n")
         for o in testcases:
