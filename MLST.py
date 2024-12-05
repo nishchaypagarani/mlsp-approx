@@ -224,7 +224,7 @@ def gen_hard_in(filename, additionalGraphs: list[Graph] = []):
     d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
     e = Graph(2, [(0,1)])
     f = Graph(6,[(0,1), (0,2),(1,3),(2,3),(2,4),(4,5),(3,5)])
-    g = Graph(8,[(0,1),(0,7),(0,5),(1,2),(2,3),(2,4),(2,5),(3,4),(4,5),(4,6),(5,6),(6,7)])
+    g = Graph(8,[(0,1),(0,7),(0,5),(1,2),(2,3),(2,4),(2,5),(3,4),(4,5),(4,6),(5,6),(6,7),(1,7),(2,7)])
     testcases = [a,b,c,d,e,f,g]
     testcases.extend(additionalGraphs)
     with open(filename, "w") as my_file:
@@ -236,9 +236,25 @@ def gen_hard_in(filename, additionalGraphs: list[Graph] = []):
                 for u in sorted(edges):
                     if u>v:
                         my_file.write(f"{v} {u}\n")
+def solve_using_greedy(graphs: list[Graph]):
+    sols = []
+    for i in range(len(graphs)):
+        print(f"Graph {i}: \n")
+        if graphs[i].is_connected():
+            graphs[i].print_gv_bi()
+            (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
+            print(f"Greedy Solution Leaves: {greedy_leaves}")
+            print("Greedy Tree: \n")
+            greedy_tree.print_gv_bi()
+            sols.append((greedy_tree,greedy_leaves))
+        else:
+            sols.append((Graph(0,[]),0))
+        print("\n\n\n")
+    return sols
 if __name__ == "__main__":
     # test_st_greedy_ds()
     fi_cases = get_input("fi_hard.in")
     gen_hard_in("hard.in", fi_cases)
     inps = get_input("hard.in")
-    solve_and_compare(inps)
+    sols = solve_using_greedy(inps)
+    gen_output("hard.out",sols)
