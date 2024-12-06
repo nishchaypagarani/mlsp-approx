@@ -5,12 +5,12 @@ from Graph import Graph
 
 # node i and its adjacent vertices (tau in paper notation)
 def node_and_adj(graph: Graph, i: int):
-    if not (0 <= i <= graph.numberOfEdges):
+    if not (0 <= i <= graph.numberOfNodes):
         raise Exception(f"{i} not a vertex of graph")
+    # probably faster way to do this lol
     out = [i]
-    for (u, v) in graph.graph:
-        if   u == i:
-            out.append(v)
+    for j in graph.graph[i]:
+        out.append(j)
     return out
 
 # given root r, finds a solution that may represent an optimal directed spanning
@@ -29,11 +29,22 @@ def rooted_LP(graph: Graph, r: int):
             # G.add_edge((v, u))
     t = n
     # t = G.add_node()
-    for i in range(n):
+    # Add artificial arcs (edges to terminal)
+    for i in range(G.numberOfNodes):
         if i != r and i != t:
             G.add_edge((i, t))
     G.print_gv(dir=True)
     # TODO: construct LP from graph
+    pulp.LpProblem("MLST", pulp.LpMaximize)
+    # Construct S for objective fn
+    int_var_inds = []
+    for i in range(graph.num_nodes):
+        if i != r and i != t:
+            int_var_inds.append((i, t))
+    int_vars = pulp.LpVariable.dict("sinks", int_var_inds,
+                                    lowBound=0, upBound=1, cat=pulp.LpInteger)
+    real_var_inds = []
+    for i in graph
 
 
 def test_rooted_LP():
