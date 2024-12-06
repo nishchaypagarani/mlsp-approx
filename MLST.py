@@ -275,8 +275,11 @@ def ensembler(graphs: list[Graph]):
                 (bf_leaves, bf_tree) = find_st_bf(graph, copy.deepcopy(graph), Graph(graph.numberOfNodes))
                 print(f"Final Leaves: {bf_leaves}")
                 print("Final Tree:")
-                bf_tree.print_gv_bi()
-                sols.append((bf_tree, bf_leaves))
+                if bf_tree!=None:
+                    bf_tree.print_gv_bi()
+                    sols.append((bf_tree, bf_leaves))
+                else:
+                    sols.append((Graph(0,[]),0))
             # otherwise, use other solution we have right now
             else:
                 print("Too big for brute force")
@@ -296,6 +299,7 @@ def ensembler(graphs: list[Graph]):
             print(f"Graph is unconnected.")
             sols.append((Graph(0,[]),0))
         # print("\n")
+    print(f"Number of solutions: {len(sols)}")
     return sols
 
 def test_ensembler(inps):
@@ -320,12 +324,24 @@ def test_ensembler(inps):
     print("All tests passed")
             # printf("Ensembler solution l")
 
+def get_all_hard_in(filename):
+    graphs: list[Graph] = list()
+    with open(filename) as my_file:
+        cnt = 1
+        for line in my_file:
+            current_graph = list(map(int, line.split()))
+            current_edges = []
+            print(f"Graph {cnt}, size: {current_graph}")
+            for j in range(current_graph[1]):
+                new_edge = list(map(int, my_file.readline().split()))
+                current_edges.append(new_edge)
+            graphs.append(Graph(current_graph[0], current_edges))
+            cnt+=1
+    return graphs
 if __name__ == "__main__":
     # test_st_greedy_ds()
-    fi_cases = get_input("fi_hard.in")
-    gen_hard_in("hard.in", fi_cases)
-    inps = get_input("hard.in")
+    inps = get_all_hard_in("all-hard.in")
     sols_ensembler = ensembler(inps)
     # test_ensembler(inps)
     # sols = solve_using_greedy(inps)
-    gen_output("hard.out", sols_ensembler)
+    gen_output("all-hard.out", sols_ensembler)
