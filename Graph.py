@@ -2,6 +2,7 @@ class Graph:
     def __init__(self, n, edges=None):
         # adjacency list mapping vert -> incident edges
         self.numberOfNodes = n
+        self.maxNode = n-1
         self.numberOfEdges = 0
         self.graph = {}
         self.graphBiDirection = {}
@@ -20,6 +21,15 @@ class Graph:
                 self.graphBiDirection[i[1]].append(i[0]) 
     def __str__(self):
         return "{}".format(self.graph)
+    
+    def add_node(self):
+        node = self.maxNode+1
+        self.nodes.add(self.maxNode+1)
+        self.maxNode+=1
+        self.numberOfNodes+=1
+        self.graph[i] = []
+        self.graphBiDirection[i] = []
+        return node
     
     def add_edge(self, edge):
         self.graph[edge[0]].append(edge[1])

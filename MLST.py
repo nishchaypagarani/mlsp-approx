@@ -73,11 +73,7 @@ def find_st_greedy_ds(graph: Graph):
 
 # Runs a linear program 
 def LP(graph: Graph, init_tr: Graph):
-
-
-
-
-# TODO: ensembler
+    return NotImplementedError
 
 
 def test_calculate_number_of_leaves():
