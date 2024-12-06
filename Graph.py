@@ -27,10 +27,10 @@ class Graph:
         self.nodes.add(self.maxNode+1)
         self.maxNode+=1
         self.numberOfNodes+=1
-        self.graph[i] = []
-        self.graphBiDirection[i] = []
+        self.graph[node] = []
+        self.graphBiDirection[node] = []
         return node
-    
+
     def add_edge(self, edge):
         self.graph[edge[0]].append(edge[1])
         self.graphBiDirection[edge[0]].append(edge[1])
@@ -70,7 +70,7 @@ class Graph:
             for v in self.graph[u]:
                 print(u, "->", v)
         print("}")
-    def print_gv_bi(self):
+    def print_gv_bi(self, include_bi=False):
         '''
         Prints the code for the current that can be copy-pasted into graphviz for visualization
         '''
@@ -80,6 +80,8 @@ class Graph:
         for u in self.graph:
             for v in self.graphBiDirection[u]:
                 if v>u:
+                    print(u, "->", v)
+                elif include_bi:
                     print(u, "->", v)
         print("}")
 
