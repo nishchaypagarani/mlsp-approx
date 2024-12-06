@@ -177,6 +177,163 @@ def test_st_greedy_ds():
     (e_leaves, e_tree_opt) = find_st_greedy_ds(e)
     print(e_leaves)
     e_tree_opt.print_gv_bi()
+    # outputs = [(a_tree_opt, a_leaves),(b_tree_opt, b_leaves),(c_tree_opt, c_leaves),(d_tree_opt, d_leaves),(e_tree_opt, e_leaves)]
+    # gen_output("hard.out", outputs)
+    # outputs = [(a, 5),(b, 6),(c, 6),(d, 6),(e, 2)]
+    # gen_output("hard.out", outputs)
+
+def solve_and_compare(graphs: list[Graph]):
+    for i in range(len(graphs)):
+        print(f"Graph {i}: \n")
+        if graphs[i].is_connected():
+            graphs[i].print_gv_bi()
+            (bf_leaves, bf_tree) = find_st_bf(graphs[i], copy.deepcopy(graphs[i]), Graph(graphs[i].numberOfNodes))
+            (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
+            print(f"Brute force solution leaves: {bf_leaves}")
+            print(f"Greedy Solution Leaves: {greedy_leaves}")
+            print("Brute force Tree: \n")
+            bf_tree.print_gv_bi()
+            print("Greedy Tree: \n")
+            greedy_tree.print_gv_bi()
+        else:
+            print("Graph not connected")
+        print("\n\n\n")
+
+def get_input(filename):
+    graphs: list[Graph] = list()
+    with open(filename) as my_file:
+        n = int(my_file.readline())
+        for i in range(n):
+            current_graph = list(map(int, my_file.readline().split()))
+            current_edges = []
+            for j in range(current_graph[1]):
+                new_edge = list(map(int, my_file.readline().split()))
+                current_edges.append(new_edge)
+            graphs.append(Graph(current_graph[0], current_edges))
+        # for i in graphs:
+        #     i.print_gv_bi()
+    return graphs
+def gen_output(filename, outputs: list[tuple[Graph, int]]):
+    with open(filename, "w") as my_file:
+        for o in outputs:
+            graph: Graph = o[0]
+            leaves = o[1]
+            my_file.write(f"{leaves} {graph.numberOfEdges}\n")
+            for v,edges in graph.graphBiDirection.items():
+                for u in sorted(edges):
+                    if u>v:
+                        my_file.write(f"{v} {u}\n")
+
+def gen_hard_in(filename, additionalGraphs: list[Graph] = []):
+    a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
+    b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
+    d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
+    e = Graph(2, [(0,1)])
+    m_a = Graph(17, [(1, 2), (2, 3), (1, 4), (4, 6), (6, 0), (0, 7), (7, 5), (5, 3),
+                     (1, 8), (2, 9), (14, 0), (16, 7), (4, 11),
+                     (8, 11), (9, 12), (10, 13), (8, 9), (9, 10), (12, 15), (14, 15), (15, 16)])
+    m_b = Graph(10, [(0, 1), (0, 4), (0, 3), (1, 4), (1, 2), (2, 4), (2, 5), (3, 6), (3, 7), (4, 7),
+                     (5, 8), (6, 9), (7, 8), (7, 9)])
+    # m_b.print_gv() 
+
+    f = Graph(6,[(0,1), (0,2),(1,3),(2,3),(2,4),(4,5),(3,5)])
+    g = Graph(8,[(0,1),(0,7),(0,5),(1,2),(2,3),(2,4),(2,5),(3,4),(4,5),(4,6),(5,6),(6,7),(1,7),(2,7)])
+    testcases = [a,b,c,d,e,f,m_a,m_b,g]
+    testcases.extend(additionalGraphs)
+    with open(filename, "w") as my_file:
+        my_file.write(f"{len(testcases)}\n")
+        for o in testcases:
+            graph: Graph = o
+            my_file.write(f"{graph.numberOfNodes} {graph.numberOfEdges}\n")
+            for v,edges in graph.graphBiDirection.items():
+                for u in sorted(edges):
+                    if u>v:
+                        my_file.write(f"{v} {u}\n")
+def solve_using_greedy(graphs: list[Graph]):
+    sols = []
+    for i in range(len(graphs)):
+        # print(f"Graph {i}: \n")
+        if graphs[i].is_connected():
+            # graphs[i].print_gv_bi()
+            (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
+            # print(f"Greedy Solution Leaves: {greedy_leaves}")
+            # print("Greedy Tree: \n")
+            # greedy_tree.print_gv_bi()
+            sols.append((greedy_tree,greedy_leaves))
+        else:
+            sols.append((Graph(0,[]),0))
+        # print("\n\n\n")
+    return sols
+
+def ensembler(graphs: list[Graph]):
+    sols = []
+    G_len = len(graphs)
+    for i in range(G_len):
+        graph = graphs[i]
+        print(f"{'-'*5} Graph {i+1} / {G_len} {'-'*5}")
+        if graph.is_connected():
+            if graph.numberOfEdges < 10:
+                graph.print_gv_bi()
+            else:
+                print(f"Omitting input graph viz for size - {graph.numberOfEdges} > 10 edges")
+            # If less than four nodes or six edges, use brute force
+            if graph.numberOfNodes <= 4 or graph.numberOfEdges <= 6:
+                print("Going with brute force")
+                (bf_leaves, bf_tree) = find_st_bf(graph, copy.deepcopy(graph), Graph(graph.numberOfNodes))
+                print(f"Final Leaves: {bf_leaves}")
+                print("Final Tree:")
+                bf_tree.print_gv_bi()
+                sols.append((bf_tree, bf_leaves))
+            # otherwise, use other solution we have right now
+            else:
+                print("Too big for brute force")
+                # TODO: when other solvers, loop through them and check if
+                # each soln valid - if so, pick tree w max leaves
+                print("Trying greedy")
+                (greedy_leaves, greedy_tree) = find_st_greedy_ds(graph)
+                print("Going with greedy")
+                print(f"Final Leaves: {greedy_leaves}")
+                print("Final Tree:")
+                if greedy_tree.numberOfEdges < 10:
+                    greedy_tree.print_gv_bi()
+                else:
+                    print(f"Omitting solution graph viz for size - {greedy_tree.numberOfEdges} > 10 edges")
+                sols.append((greedy_tree,greedy_leaves))
+        else:
+            print(f"Graph is unconnected.")
+            sols.append((Graph(0,[]),0))
+        # print("\n")
+    return sols
+
+def test_ensembler(inps):
+    sols_ens = ensembler(inps)
+    sols_greedy = solve_using_greedy(inps)
+    # for sol in range(len())
+    assert len(sols_ens) == len(sols_greedy)
+    for i in range(len(sols_ens)):
+        ens_tree, ens_leaves = sols_ens[i]
+        greedy_tree, greedy_leaves = sols_greedy[i]
+        print(f"Testing agreement on graph {i+1} / {len(inps)}")
+        if ens_leaves != greedy_leaves:
+            print(f"Difference on graph {i}")
+            inps[i].print_gv_bi()
+            print(f"Ensembler leaves {ens_leaves}, Greedy leaves {greedy_leaves}")
+            if greedy_tree.numberOfNodes < 10:
+                print("Ensembler tree:")
+                ens_tree.print_gv_bi()
+                print("Greedy tree:")
+                greedy_tree.print_gv_bi()
+            return
+    print("All tests passed")
+            # printf("Ensembler solution l")
 
 if __name__ == "__main__":
-    test_st_greedy_ds()
+    # test_st_greedy_ds()
+    fi_cases = get_input("fi_hard.in")
+    gen_hard_in("hard.in", fi_cases)
+    inps = get_input("hard.in")
+    sols_ensembler = ensembler(inps)
+    # test_ensembler(inps)
+    # sols = solve_using_greedy(inps)
+    gen_output("hard.out", sols_ensembler)
