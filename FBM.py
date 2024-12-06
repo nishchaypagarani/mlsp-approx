@@ -8,7 +8,7 @@ def node_and_adj(graph: Graph, i: int):
     if not (0 <= i <= graph.numberOfEdges):
         raise Exception(f"{i} not a vertex of graph")
     out = [i]
-    for (u, v) in graph.graphBiDirection:
+    for (u, v) in graph.graph:
         if   u == i:
             out.append(v)
     return out
@@ -19,18 +19,28 @@ def rooted_LP(graph: Graph, r: int):
     if not (0 <= r < graph.numberOfNodes):
         raise Exception(f"{r} not a vertex of graph")
     # Construct graph
-    G = copy.deepcopy(graph)
-    t = G.add_node()
-    for i in range(G.numberOfNodes):
+    # G = copy.deepcopy(graph)
+    n = graph.numberOfNodes
+    G = Graph(n+1)
+    # explicitly add bidirectional edges
+    for u in range(n):
+        for v in graph.graphBiDirection[u]:
+            G.add_edge((u, v))
+            # G.add_edge((v, u))
+    t = n
+    # t = G.add_node()
+    for i in range(n):
         if i != r and i != t:
             G.add_edge((i, t))
-    G.print_gv_bi(include_bi=True)
+    G.print_gv(dir=True)
     # TODO: construct LP from graph
 
 
 def test_rooted_LP():
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
-    a.print_gv_bi(include_bi=True)
+    print("Input graph")
+    a.print_gv()
+    print("Constructed graph for LP:")
     rooted_LP(a, 0)
 
 

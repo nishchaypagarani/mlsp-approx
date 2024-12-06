@@ -59,24 +59,31 @@ class Graph:
             self.graph.pop(node)
             self.graphBiDirection.pop(node)
 
-    def print_gv(self):
+    def print_gv(self, dir=False):
         '''
         Prints the code for the current that can be copy-pasted into graphviz for visualization
         '''
         # for use with visualizer: https://dreampuf.github.io/GraphvizOnline/#digraph%20G
         print("digraph G {")
-        print("edge [dir = none]")
+        if dir:
+            print("edge []")
+        else:  
+            print("edge [dir = none]")
         for u in self.graph:
             for v in self.graph[u]:
                 print(u, "->", v)
         print("}")
+
     def print_gv_bi(self, include_bi=False):
         '''
         Prints the code for the current that can be copy-pasted into graphviz for visualization
         '''
         # for use with visualizer: https://dreampuf.github.io/GraphvizOnline/#digraph%20G
         print("digraph G {")
-        print("edge [dir = none]")
+        if include_bi:
+            print("edge []")
+        else:
+            print("edge [dir = none]")
         for u in self.graph:
             for v in self.graphBiDirection[u]:
                 if v>u:
