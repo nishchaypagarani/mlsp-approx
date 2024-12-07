@@ -1,5 +1,7 @@
-from Graph import Graph
 import copy
+import time
+from Graph import Graph
+from FBM import rooted_LP
 
 def calculate_number_of_leaves(tree: Graph):
     deg = [0]*tree.numberOfNodes
@@ -13,7 +15,6 @@ def calculate_number_of_leaves(tree: Graph):
             cnt+=1
     return cnt
 
-# TODO: brute force
 def find_st_bf(graph: Graph, remainingGraph: Graph, fixedGraph: Graph):
     maxLeaves=-1
     bestGraph = None
@@ -71,9 +72,48 @@ def find_st_greedy_ds(graph: Graph):
     leaves = calculate_number_of_leaves(stGraph)
     return (leaves,stGraph)
 
-# Runs a linear program 
-def LP(graph: Graph, init_tr: Graph):
-    return NotImplementedError
+def flow_leaves(int_flow_vals, eps=1e-5):
+    # add 1 to account for root
+    leaves = 1
+    for arc in int_flow_vals.keys():
+        if abs(int_flow_vals[arc] - 1.0) < eps:
+            leaves += 1
+    return leaves
+
+# given original graph, construct a tree on it
+def flow_to_tree(graph: Graph, real_flow_vals, threshold=1e-5):
+    
+    pass
+    
+
+# Runs a linear program  on a graph to find a MLST tree
+# graph: Graph (assumed connected)
+# time_limit: int (seconds)
+# baseline: int (number of leaves - only returns tree if
+# number of leaves greater than this)
+# TODO (in ensembler) - check that a valid spanning tree is returned with st_checker
+def find_st_LP(graph: Graph, time_limit: int, baseline: int):
+    # TODO: check FBM's leaves value matches calculate_number_of_leaves(tree)
+    best_leaves = 0
+    best_tree = {}
+    start = time.perf_counter()
+    for r in range(graph.numberOfNodes):
+        print(f"Running LP on root {r}/{graph.numberOfNodes}")
+        int_flow_vals, real_flow_vals = rooted_LP(graph, r)
+        leaves = flow_leaves(int_flow_vals)
+        if leaves > best_leaves:
+            best_tree = flow_to_tree(real_flow_vals)
+            best_leaves = leaves
+        now = time.perf_counter()
+        if now - start >= time_limit:
+                break
+    if best_leaves > baseline:
+        print("Tree found better than baseline!")
+        return (best_leaves, best_tree)
+    else:
+        print("No tree found better than baseline.")
+        return None
+
 
 
 def test_calculate_number_of_leaves():

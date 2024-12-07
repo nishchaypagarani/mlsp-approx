@@ -15,27 +15,7 @@ def node_and_adj(graph: Graph, i: int):
         out.append(j)
     return out
 
-# given root r, finds a solution that may represent an optimal directed spanning
-# tree at that root
-def rooted_LP(graph: Graph, r: int):
-    if not (0 <= r < graph.numberOfNodes):
-        raise Exception(f"{r} not a vertex of graph")
-    # Construct graph
-    # G = copy.deepcopy(graph)
-    n = graph.numberOfNodes
-    G = Graph(n+1)
-    # explicitly add bidirectional edges
-    for u in range(n):
-        for v in graph.graphBiDirection[u]:
-            G.add_edge((u, v))
-            # G.add_edge((v, u))
-    t = n
-    # t = G.add_node()
-    # Add artificial arcs (edges to terminal)
-    for i in range(G.numberOfNodes):
-        if i != r and i != t:
-            G.add_edge((i, t))
-    G.print_gv(dir=True)
+def construct_LP(graph: Graph, n: int, r: int, t: int):
     # Define the LP Problem
     mlst_lp = pulp.LpProblem("MLST", pulp.LpMaximize)
     # Define the integer variables - one per each edge from non-root node to
@@ -89,20 +69,59 @@ def rooted_LP(graph: Graph, r: int):
             LHS = pulp.lpSum(LHS_1) + 2*(n-2)*int_vars[(i, t)]
             mlst_lp += (LHS <= 2*(n-2))
             # mlst_lp += (LHS >= 0)
+    # TODO: add second args(?) of readable label for above constraints like in
+    return mlst_lp, int_vars, real_vars
+
+# given root r, finds a solution that may represent an optimal directed spanning
+# tree at that root
+def rooted_LP(graph: Graph, r: int, debug=True):
+    if not (0 <= r < graph.numberOfNodes):
+        raise Exception(f"{r} not a vertex of graph")
+    # Construct graph
+    # G = copy.deepcopy(graph)
+    n = graph.numberOfNodes
+    G = Graph(n+1)
+    # explicitly add bidirectional edges
+    for u in range(n):
+        for v in graph.graphBiDirection[u]:
+            G.add_edge((u, v))
+            # G.add_edge((v, u))
+    t = n
+    # t = G.add_node()
+    # Add artificial arcs (edges to terminal)
+    for i in range(G.numberOfNodes):
+        if i != r and i != t:
+            G.add_edge((i, t))
+    G.print_gv(dir=True)
     
-    print(mlst_lp.variables())
+    mlst_lp, int_vars, real_vars = construct_LP(G, n, r, t)
+    if debug:
+        print(mlst_lp.variables())
     # print(json.dumps(mlst_lp.to_dict(), indent=2))
+
+    # Solve the LP
     mlst_lp.solve()
 
-    print("Int var values:")
-    for i in range(n):
-        if i != r:
-            print(f"f_({i}, t) = {int_vars[(i, t)].value()}")
-    print("Real var values:")
-    for E in real_vars.keys():
-        print(f"f_{E} = {real_vars[E].value()}")
-    flow_vals = real_vars
-    # TODO: add second args(?) of readable label for above constraints like in
+    # Return Values
+    if debug:
+        print("Int var values:")
+        for i in range(n):
+            if i != r:
+                print(f"f_({i}, t) = {int_vars[(i, t)].value()}")
+        print("Real var values:")
+        for E in real_vars.keys():
+            print(f"f_{E} = {real_vars[E].value()}")
+    real_flow_vals = {}
+    int_flow_vals = {}
+    for k, v in real_vars.items():
+        # do I need to account for bidirectionality?
+        if v.value() is None:
+            real_flow_vals[k] = 0.0
+        else:
+            real_flow_vals[k] = v.value()
+    for k, v in int_vars.items():
+        int_flow_vals[k] = v.value()
+    return int_flow_vals, real_flow_vals
 
 
 def test_rooted_LP():
@@ -114,7 +133,10 @@ def test_rooted_LP():
     print("Input graph")
     a.print_gv()
     print("Constructed graph for LP:")
-    rooted_LP(a, 0)
+    fv_i, fv_r = rooted_LP(a, 0)
+    
+    print(fv_i)
+    print(fv_r)
 
 
 if __name__ == "__main__":
