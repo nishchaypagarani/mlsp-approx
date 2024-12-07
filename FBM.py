@@ -15,13 +15,13 @@ def node_and_adj(graph: Graph, i: int):
         out.append(j)
     return out
 
-def construct_LP(graph: Graph, n: int, r: int, t: int):
+def construct_LP(G: Graph, n: int, r: int, t: int):
     # Define the LP Problem
     mlst_lp = pulp.LpProblem("MLST", pulp.LpMaximize)
     # Define the integer variables - one per each edge from non-root node to
     # sink 
     int_var_inds = []
-    for i in range(graph.numberOfNodes):
+    for i in range(n):
         if i != r and i != t:
             int_var_inds.append((i, t))
     # Has Constraint Eq. 6 - vars in {0, 1}
@@ -49,7 +49,7 @@ def construct_LP(graph: Graph, n: int, r: int, t: int):
     mlst_lp += (pulp.lpSum(LHS) - S == (n - 1))
     # Constraint Eq. 3 - each vertex (other than root and terminal) consuming 1
     # unit flow
-    for i in range(graph.numberOfNodes):
+    for i in range(n):
         if i != r and i != t:
             LHS_1 = [real_vars[(j, i)] for j in node_and_adj(G, i) if j != t]
             LHS_2 = []
@@ -63,7 +63,7 @@ def construct_LP(graph: Graph, n: int, r: int, t: int):
             # LHS_2 = [real_vars[(i, k)] for k in node_and_adj(G, i) if k != r]
             mlst_lp += (pulp.lpSum(LHS_1) - pulp.lpSum(LHS_2) == 1)
     # Constraint Eq. 4 - sinks can only send flows to terminal
-    for i in range(graph.numberOfNodes):
+    for i in range(n):
         if i != r and i != t:
             LHS_1 = [real_vars[(i, j)] for j in node_and_adj(G, i) if j != r and j != t]
             LHS = pulp.lpSum(LHS_1) + 2*(n-2)*int_vars[(i, t)]

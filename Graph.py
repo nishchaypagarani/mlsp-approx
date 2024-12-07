@@ -31,7 +31,14 @@ class Graph:
         self.graphBiDirection[node] = []
         return node
 
-    def add_edge(self, edge):
+    # allow_duplicates=False makes it so (1, 0) can't be added if (0, 1) is
+    # already in the graph - otherwise the edge would be printed > once in
+    # output
+    def add_edge(self, edge, allow_duplicates=True):
+        if not allow_duplicates:
+            (u, v) = edge
+            if v in self.graphBiDirection[u]:
+                return False
         self.graph[edge[0]].append(edge[1])
         self.graphBiDirection[edge[0]].append(edge[1])
         self.graphBiDirection[edge[1]].append(edge[0]) 
@@ -92,6 +99,25 @@ class Graph:
                     print(u, "->", v)
         print("}")
 
+    def ret_gv_bi(self, include_bi=False):
+        '''
+        Returns the code for the current that can be copy-pasted into graphviz for visualization
+        '''
+        # for use with visualizer: https://dreampuf.github.io/GraphvizOnline/#digraph%20G
+        out = "digraph G { \n"
+        if include_bi:
+            out += "edge [] \n"
+        else:
+            out += "edge [dir = none] \n"
+        for u in self.graph:
+            for v in self.graphBiDirection[u]:
+                if v>u:
+                    out += f"{u} -> {v} \n"
+                elif include_bi:
+                    out += f"{u} -> {v} \n"
+        out += "} \n"
+        return out 
+    
     # TODO: if needed if recursion depth exceeded for large graphs, make iterative
     def explore_st_checker(self, tree, u, parent, visited):
         '''
