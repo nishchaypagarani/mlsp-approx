@@ -56,7 +56,8 @@ def rooted_LP(graph: Graph, r: int):
     real_var_inds = []
     for i in range(n):
         for j in G.graph[i]:
-            real_var_inds.append((i, j))
+            if j!= t:
+                real_var_inds.append((i, j))
     # Has Constraint Eq. 5 - flow must be > 0 and < 2n-2
     real_vars = pulp.LpVariable.dicts("reals", real_var_inds,
                                      lowBound=0, upBound=(2*n-2),
@@ -71,21 +72,21 @@ def rooted_LP(graph: Graph, r: int):
     for i in range(graph.numberOfNodes):
         if i != r and i != t:
             LHS_1 = [real_vars[(j, i)] for j in node_and_adj(G, i) if j != t]
-            # LHS_2 = []
-            # for k in node_and_adj(G, i):
-            #     if k != r:
-            #         if k == t:
-            #             LHS_2.append(int_vars[(i, k)])
-            #         else:
-            #             LHS_2.append(real_vars[(i, k)])
+            LHS_2 = []
+            for k in node_and_adj(G, i):
+                if k != r:
+                    if k == t:
+                        LHS_2.append(int_vars[(i, k)])
+                    else:
+                        LHS_2.append(real_vars[(i, k)])
                 
-            LHS_2 = [real_vars[(i, k)] for k in node_and_adj(G, i) if k != r]
+            # LHS_2 = [real_vars[(i, k)] for k in node_and_adj(G, i) if k != r]
             mlst_lp += (pulp.lpSum(LHS_1) - pulp.lpSum(LHS_2) == 1)
     # Constraint Eq. 4 - sinks can only send flows to terminal
     for i in range(graph.numberOfNodes):
         if i != r and i != t:
             LHS_1 = [real_vars[(i, j)] for j in node_and_adj(G, i) if j != r and j != t]
-            LHS = pulp.lpSum(LHS_1) + 2*(n-2)*real_vars[(i, t)]
+            LHS = pulp.lpSum(LHS_1) + 2*(n-2)*int_vars[(i, t)]
             mlst_lp += (LHS <= 2*(n-2))
             # mlst_lp += (LHS >= 0)
     
@@ -93,18 +94,16 @@ def rooted_LP(graph: Graph, r: int):
     # print(json.dumps(mlst_lp.to_dict(), indent=2))
     mlst_lp.solve()
 
-    # for i in range(n):
-    #     if i != r:
-    #         print(f"f_{i},t = {int_vars[(i, t)].value()}")
+    print("Int var values:")
+    for i in range(n):
+        if i != r:
+            print(f"f_({i}, t) = {int_vars[(i, t)].value()}")
+    print("Real var values:")
     for E in real_vars.keys():
-        print(f"f_{E}: {real_vars[E].value()}")
+        print(f"f_{E} = {real_vars[E].value()}")
+    flow_vals = real_vars
     # TODO: add second args(?) of readable label for above constraints like in
-    # TODO: start off at vertex in feasible region - a tree
-    # wedding.py
-     
 
-    
-    
 
 def test_rooted_LP():
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
@@ -113,9 +112,9 @@ def test_rooted_LP():
                      (1, 8), (2, 9), (14, 0), (16, 7), (4, 11),
                      (8, 11), (9, 12), (10, 13), (8, 9), (9, 10), (12, 15), (14, 15), (15, 16)])
     print("Input graph")
-    m_a.print_gv()
+    a.print_gv()
     print("Constructed graph for LP:")
-    rooted_LP(m_a, 0)
+    rooted_LP(a, 0)
 
 
 if __name__ == "__main__":
