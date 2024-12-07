@@ -46,8 +46,8 @@ def rooted_LP(graph: Graph, r: int):
             int_var_inds.append((i, t))
     # Has Constraint Eq. 6 - vars in {0, 1}
     int_vars = pulp.LpVariable.dicts("ints", int_var_inds,
-                                    lowBound=0, upBound=1)#,
-                                    # cat=pulp.LpInteger)
+                                    lowBound=0, upBound=1,
+                                    cat=pulp.LpInteger)
     # Can also try LpBinary to see if it makes a difference
     S = pulp.lpSum(int_vars)
     # Make S the objective function
@@ -85,18 +85,21 @@ def rooted_LP(graph: Graph, r: int):
     for i in range(graph.numberOfNodes):
         if i != r and i != t:
             LHS_1 = [real_vars[(i, j)] for j in node_and_adj(G, i) if j != r and j != t]
-            LHS = pulp.lpSum(LHS) + 2*(n-2)*real_vars[(i, t)]
+            LHS = pulp.lpSum(LHS_1) + 2*(n-2)*real_vars[(i, t)]
             mlst_lp += (LHS <= 2*(n-2))
+            # mlst_lp += (LHS >= 0)
     
     print(mlst_lp.variables())
     # print(json.dumps(mlst_lp.to_dict(), indent=2))
-    # mlst_lp.solve()
+    mlst_lp.solve()
 
     # for i in range(n):
     #     if i != r:
     #         print(f"f_{i},t = {int_vars[(i, t)].value()}")
+    for E in real_vars.keys():
+        print(f"f_{E}: {real_vars[E].value()}")
     # TODO: add second args(?) of readable label for above constraints like in
-
+    # TODO: start off at vertex in feasible region - a tree
     # wedding.py
      
 
@@ -106,10 +109,13 @@ def rooted_LP(graph: Graph, r: int):
 def test_rooted_LP():
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
     b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    m_a = Graph(17, [(1, 2), (2, 3), (1, 4), (4, 6), (6, 0), (0, 7), (7, 5), (5, 3),
+                     (1, 8), (2, 9), (14, 0), (16, 7), (4, 11),
+                     (8, 11), (9, 12), (10, 13), (8, 9), (9, 10), (12, 15), (14, 15), (15, 16)])
     print("Input graph")
-    b.print_gv()
+    m_a.print_gv()
     print("Constructed graph for LP:")
-    rooted_LP(b, 0)
+    rooted_LP(m_a, 0)
 
 
 if __name__ == "__main__":
