@@ -393,6 +393,7 @@ def ensembler(graphs: list[Graph], log_short=None, log_long=None, progress_log=N
         fo2.write(f"{'-'*5} Graph {i+1} / {G_len} {'-'*5}\n")
         with open(progress_log, 'w+') as pfo:
             pfo.write(f"{'-'*15} Graph {i+1} / {G_len} {'-'*15}\n")
+        # try:
         if graph.is_connected():
             if graph.numberOfEdges < 50:
                 fo2.write(graph.ret_gv_bi())
@@ -494,16 +495,16 @@ def get_all_hard_in(filename):
     return graphs
 if __name__ == "__main__":
     # test_st_greedy_ds()
-    inps = get_all_hard_in("all-hard.in")
+    # inps = get_all_hard_in("all-hard.in")
     # sols_ensembler = ensembler(inps)
     # test_st_LP("test_lp.txt")
     # fi_cases = get_input("fi_hard.in")
     # gen_hard_in("hard.in", fi_cases)
-    # inps = get_input("hard.in")
+    inps = get_input("hard.in")
     sols_ensembler = ensembler(inps, 
                                log_short="log_short.txt",
                                log_long="log_long.txt",
                                progress_log="progress_log.txt")
     # test_ensembler(inps)
     # sols = solve_using_greedy(inps)
-    gen_output("ensembler-all-hard.out", sols_ensembler)
+    # gen_output("ensembler-all-hard.out", sols_ensembler)
