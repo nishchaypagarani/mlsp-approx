@@ -328,15 +328,18 @@ def get_input(filename):
         #     i.print_gv_bi()
     return graphs
 def gen_output(filename, outputs: list[tuple[Graph, int]]):
+    total_leaves = 0
     with open(filename, "w") as my_file:
         for o in outputs:
             graph: Graph = o[0]
             leaves = o[1]
+            total_leaves += leaves
             my_file.write(f"{leaves} {graph.numberOfEdges}\n")
             for v,edges in graph.graphBiDirection.items():
                 for u in sorted(edges):
                     if u>v:
                         my_file.write(f"{v} {u}\n")
+    print(total_leaves)
 
 def gen_hard_in(filename, additionalGraphs: list[Graph] = []):
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
