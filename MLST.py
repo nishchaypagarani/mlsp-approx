@@ -380,7 +380,7 @@ def solve_using_greedy(graphs: list[Graph]):
         # print("\n\n\n")
     return sols
 
-def ensembler(graphs: list[Graph], log_short=None, log_long=None, progress_log=None):
+def ensembler(graphs: list[Graph], max_lp_nodes=250, log_short=None, log_long=None, progress_log=None):
     sols = []
     G_len = len(graphs)
     LP_better = 0
@@ -422,8 +422,10 @@ def ensembler(graphs: list[Graph], log_short=None, log_long=None, progress_log=N
                 fo2.write("Trying greedy\n")
                 
                 (greedy_leaves, greedy_tree) = find_st_greedy_ds(graph)
-                (LP_leaves, LP_tree) = find_st_LP(graph, time_limit=(3*60+30),
-                                                  baseline=greedy_leaves)
+                (LP_leaves, LP_tree) = (None, None)
+                if graph.numberOfNodes < max_lp_nodes:
+                    (LP_leaves, LP_tree) = find_st_LP(graph, time_limit=(3*60+30),
+                                                      baseline=greedy_leaves)
                 if LP_leaves is not None and graph.st_checker(LP_tree):
                     sols.append((LP_tree, LP_leaves))
                     LP_better += 1
@@ -492,19 +494,22 @@ def get_all_hard_in(filename):
                 current_edges.append(new_edge)
             graphs.append(Graph(current_graph[0], current_edges))
             cnt+=1
+        # cnt should be 524 at end
     return graphs
 if __name__ == "__main__":
     # test_st_greedy_ds()
-    # inps = get_all_hard_in("all-hard.in")
+    inps = get_all_hard_in("all-hard.in")
+    # print(inps[4].numberOfEdges)
     # sols_ensembler = ensembler(inps)
     # test_st_LP("test_lp.txt")
     # fi_cases = get_input("fi_hard.in")
     # gen_hard_in("hard.in", fi_cases)
-    inps = get_input("hard.in")
-    sols_ensembler = ensembler(inps, 
+    # inps = get_input("hard.in")
+    sols_ensembler = ensembler(inps,
+                               max_lp_nodes=50,
                                log_short="log_short.txt",
                                log_long="log_long.txt",
                                progress_log="progress_log.txt")
     # test_ensembler(inps)
     # sols = solve_using_greedy(inps)
-    # gen_output("ensembler-all-hard.out", sols_ensembler)
+    gen_output("all-hard.out", sols_ensembler)
