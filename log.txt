@@ -1,0 +1,20 @@
+Graph 0: 
+Greedy Solution Leaves: 3
+Brute force solution leaves: 3
+LP Solution leaves: 3
+Graph 1: 
+Greedy Solution Leaves: 3
+Brute force solution leaves: 3
+LP Solution leaves: 3
+Graph 2: 
+Greedy Solution Leaves: 5
+Brute force solution leaves: 5
+LP Solution leaves: 5
+Graph 3: 
+Greedy Solution Leaves: 5
+Brute force solution leaves: 5
+LP Solution leaves: 5
+Graph 4: 
+Greedy Solution Leaves: 2
+Brute force solution leaves: 2
+LP Solution leaves: 2

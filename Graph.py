@@ -2,6 +2,7 @@ class Graph:
     def __init__(self, n, edges=None):
         # adjacency list mapping vert -> incident edges
         self.numberOfNodes = n
+        self.maxNode = n-1
         self.numberOfEdges = 0
         self.graph = {}
         self.graphBiDirection = {}
@@ -21,7 +22,23 @@ class Graph:
     def __str__(self):
         return "{}".format(self.graph)
     
-    def add_edge(self, edge):
+    def add_node(self):
+        node = self.maxNode+1
+        self.nodes.add(self.maxNode+1)
+        self.maxNode+=1
+        self.numberOfNodes+=1
+        self.graph[node] = []
+        self.graphBiDirection[node] = []
+        return node
+
+    # allow_duplicates=False makes it so (1, 0) can't be added if (0, 1) is
+    # already in the graph - otherwise the edge would be printed > once in
+    # output
+    def add_edge(self, edge, allow_duplicates=True):
+        if not allow_duplicates:
+            (u, v) = edge
+            if v in self.graphBiDirection[u]:
+                return False
         self.graph[edge[0]].append(edge[1])
         self.graphBiDirection[edge[0]].append(edge[1])
         self.graphBiDirection[edge[1]].append(edge[0]) 
@@ -49,30 +66,58 @@ class Graph:
             self.graph.pop(node)
             self.graphBiDirection.pop(node)
 
-    def print_gv(self):
+    def print_gv(self, dir=False):
         '''
         Prints the code for the current that can be copy-pasted into graphviz for visualization
         '''
         # for use with visualizer: https://dreampuf.github.io/GraphvizOnline/#digraph%20G
         print("digraph G {")
-        print("edge [dir = none]")
+        if dir:
+            print("edge []")
+        else:  
+            print("edge [dir = none]")
         for u in self.graph:
             for v in self.graph[u]:
                 print(u, "->", v)
         print("}")
-    def print_gv_bi(self):
+
+    def print_gv_bi(self, include_bi=False):
         '''
         Prints the code for the current that can be copy-pasted into graphviz for visualization
         '''
         # for use with visualizer: https://dreampuf.github.io/GraphvizOnline/#digraph%20G
         print("digraph G {")
-        print("edge [dir = none]")
+        if include_bi:
+            print("edge []")
+        else:
+            print("edge [dir = none]")
         for u in self.graph:
             for v in self.graphBiDirection[u]:
                 if v>u:
                     print(u, "->", v)
+                elif include_bi:
+                    print(u, "->", v)
         print("}")
 
+    def ret_gv_bi(self, include_bi=False):
+        '''
+        Returns the code for the current that can be copy-pasted into graphviz for visualization
+        '''
+        # for use with visualizer: https://dreampuf.github.io/GraphvizOnline/#digraph%20G
+        out = "digraph G { \n"
+        if include_bi:
+            out += "edge [] \n"
+        else:
+            out += "edge [dir = none] \n"
+        for u in self.graph:
+            for v in self.graphBiDirection[u]:
+                if v>u:
+                    out += f"{u} -> {v} \n"
+                elif include_bi:
+                    out += f"{u} -> {v} \n"
+        out += "} \n"
+        return out 
+    
     # TODO: if needed if recursion depth exceeded for large graphs, make iterative
     def explore_st_checker(self, tree, u, parent, visited):
         '''

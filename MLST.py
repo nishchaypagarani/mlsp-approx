@@ -1,5 +1,7 @@
-from Graph import Graph
 import copy
+import time
+from Graph import Graph
+from FBM import rooted_LP
 
 def calculate_number_of_leaves(tree: Graph):
     deg = [0]*tree.numberOfNodes
@@ -13,7 +15,6 @@ def calculate_number_of_leaves(tree: Graph):
             cnt+=1
     return cnt
 
-# TODO: brute force
 def find_st_bf(graph: Graph, remainingGraph: Graph, fixedGraph: Graph):
     maxLeaves=-1
     bestGraph = None
@@ -70,6 +71,57 @@ def find_st_greedy_ds(graph: Graph):
                 stGraph.add_edge((maxNeighborNode,j))
     leaves = calculate_number_of_leaves(stGraph)
     return (leaves,stGraph)
+
+def flow_leaves(int_flow_vals, eps=1e-5):
+    # add 1 to account for root
+    leaves = 1
+    for arc in int_flow_vals.keys():
+        if abs(int_flow_vals[arc] - 1.0) < eps:
+            leaves += 1
+    return leaves
+
+# given original graph, construct a tree on it
+def flow_to_tree(graph: Graph, real_flow_vals, threshold=1e-5):
+    T = Graph(graph.numberOfNodes)
+    for edge in real_flow_vals.keys():
+        # make sure not adding duplicate edges
+        if real_flow_vals[edge] - 0.0 > threshold:
+            T.add_edge(edge, allow_duplicates=False)
+    return T
+
+# Runs a linear program  on a graph to find a MLST tree
+# graph: Graph (assumed connected)
+# time_limit: int (seconds)
+# baseline: int (number of leaves - only returns tree if
+# number of leaves greater than this)
+def find_st_LP(graph: Graph, time_limit=60, baseline=0):
+    # TODO: check FBM's leaves value matches calculate_number_of_leaves(tree)
+    best_leaves = 0
+    best_tree = {}
+    start = time.perf_counter()
+    with open('temp', 'w+') as fo:
+        for r in range(graph.numberOfNodes):
+            print(f"Running LP on root {r}/{graph.numberOfNodes}")
+            int_flow_vals, real_flow_vals = rooted_LP(graph, r)
+            # leaves = flow_leaves(int_flow_vals)
+            tree = flow_to_tree(graph, real_flow_vals)
+            leaves = calculate_number_of_leaves(tree)
+            fo.write(str(int_flow_vals) + "\n")
+            fo.write(str(real_flow_vals) + "\n")
+            fo.write("Leaves: " + str(leaves) + "\n")
+            if leaves > best_leaves:
+                # best_tree = flow_to_tree(graph, real_flow_vals)
+                best_tree = tree
+                best_leaves = leaves
+            now = time.perf_counter()
+            if now - start >= time_limit:
+                    break
+    if best_leaves > baseline:
+        print("Tree found better than baseline!")
+        return (best_leaves, best_tree)
+    else:
+        print("No tree found better than baseline.")
+        return None, None
 
 
 def test_calculate_number_of_leaves():
@@ -191,6 +243,76 @@ def solve_and_compare(graphs: list[Graph]):
             print("Graph not connected")
         print("\n\n\n")
 
+
+# Takes list of solvers - "LP", "bf", "greedy"
+def solve_and_compare_LP(graphs: list[Graph], solvers):
+    with open("log.txt", 'w') as fo, open("log2.txt", 'w') as fo2:
+        for i in range(len(graphs)):
+            fo.write(f"Graph {i}: \n")
+            fo2.write(f"Graph {i}: \n")
+            fo2.write(f"Input Graph: \n")
+            fo2.write(graphs[i].ret_gv_bi())
+            if graphs[i].is_connected():
+                if "greedy" in solvers:
+                    (greedy_leaves, greedy_tree) = find_st_greedy_ds(graphs[i])
+                    fo.write(f"Greedy Solution Leaves: {greedy_leaves}\n")
+                    fo2.write("Greedy Tree: \n")
+                    fo2.write(greedy_tree.ret_gv_bi())
+                if "bf" in solvers:
+                    (bf_leaves, bf_tree) = find_st_bf(graphs[i], copy.deepcopy(graphs[i]), Graph(graphs[i].numberOfNodes))
+                    fo.write(f"Brute force solution leaves: {bf_leaves}\n")
+                    fo2.write("Brute force Tree: \n")
+                    fo2.write(bf_tree.ret_gv_bi())
+                if "lp" in solvers:
+                    (lp_leaves, lp_tree) = find_st_LP(graphs[i])
+                    fo.write(f"LP Solution leaves: {lp_leaves}\n")
+                    fo2.write("LP Tree: \n")
+                    fo2.write(lp_tree.ret_gv_bi())
+            else:
+                fo.write("Graph not connected")
+                fo2.write("Graph not connected")
+            print("\n\n\n")
+
+def test_st_LP(fname_out = None):
+    a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
+    b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
+    c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
+    d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
+    e = Graph(2, [(0,1)])
+    graphs = {"a":a, "b":b, "c":c, "d":d, "e":e}
+    if fname_out is not None:
+        with open(fname_out, 'w') as fo:
+            for name, graph in graphs.items():
+                fo.write(f"Test case: {name} \n")
+                fo.write(graph.ret_gv_bi())
+                (leaves, tree_opt) = find_st_LP(graph)
+                fo.write(f"Leaves: {leaves}\n")
+                fo.write(tree_opt.ret_gv_bi())
+                fo.write(f"Output is a tree: {graph.st_checker(tree_opt)}\n\n")
+    # print("\n\n\n Test case B: ")
+    # b.print_gv_bi()
+    # (b_leaves, b_tree_opt) = find_st_LP(b)
+    # print(b_leaves)
+    # b_tree_opt.print_gv_bi()
+    # print("\n\n\n Test case C: ")
+    # c.print_gv_bi()
+    # (c_leaves, c_tree_opt) = find_st_LP(c)
+    # print(c_leaves)
+    # c_tree_opt.print_gv_bi()
+    # print("\n\n\n Test case D: ")
+    # d.print_gv_bi()
+    # (d_leaves, d_tree_opt) = find_st_LP(d)
+    # print(d_leaves)
+    # d_tree_opt.print_gv_bi()
+    # print("\n\n\n Test case E: ")
+    # e.print_gv_bi()
+    # find_st_LP(e)
+    # (e_leaves, e_tree_opt) = find_st_LP(e)
+    # print(e_leaves)
+    # e_tree_opt.print_gv_bi()
+    # solve_and_compare_LP([a, b, c, d, e], ["bf", "greedy", "lp"])
+
+
 def get_input(filename):
     graphs: list[Graph] = list()
     with open(filename) as my_file:
@@ -258,47 +380,79 @@ def solve_using_greedy(graphs: list[Graph]):
         # print("\n\n\n")
     return sols
 
-def ensembler(graphs: list[Graph]):
+def ensembler(graphs: list[Graph], log_short=None, log_long=None, progress_log=None):
     sols = []
     G_len = len(graphs)
+    LP_better = 0
+    greedy_better = 0
+    fo1 = open(log_short, 'a+')
+    fo2 = open(log_long, 'a+')
     for i in range(G_len):
         graph = graphs[i]
-        print(f"{'-'*5} Graph {i+1} / {G_len} {'-'*5}")
+        fo1.write(f"{'-'*5} Graph {i+1} / {G_len} {'-'*5}\n")
+        fo2.write(f"{'-'*5} Graph {i+1} / {G_len} {'-'*5}\n")
+        with open(progress_log, 'w+') as pfo:
+            pfo.write(f"{'-'*15} Graph {i+1} / {G_len} {'-'*15}\n")
         if graph.is_connected():
-            if graph.numberOfEdges < 10:
-                graph.print_gv_bi()
+            if graph.numberOfEdges < 50:
+                fo2.write(graph.ret_gv_bi())
             else:
-                print(f"Omitting input graph viz for size - {graph.numberOfEdges} > 10 edges")
+                fo2.write(f"Omitting input graph viz for size - {graph.numberOfEdges} > 50 edges\n")
             # If less than four nodes or six edges, use brute force
             if graph.numberOfNodes <= 4 or graph.numberOfEdges <= 6:
-                print("Going with brute force")
+                fo1.write("Going with brute force\n")
+                fo2.write("Going with brute force\n")
                 (bf_leaves, bf_tree) = find_st_bf(graph, copy.deepcopy(graph), Graph(graph.numberOfNodes))
-                print(f"Final Leaves: {bf_leaves}")
-                print("Final Tree:")
-                if bf_tree!=None:
-                    bf_tree.print_gv_bi()
+                if bf_tree != None:
+                    fo1.write(f"Final Leaves: {bf_leaves}\n")
+                    fo2.write(f"Final Leaves: {bf_leaves}\n")
+                    fo2.write("Final Tree:\n")
+                    fo2.write(bf_tree.ret_gv_bi())
                     sols.append((bf_tree, bf_leaves))
                 else:
-                    sols.append((Graph(0,[]),0))
+                    sols.append((Graph(0,[]),1))
+                    fo1.write("Single node case")
+                    fo2.write("Single node case")
             # otherwise, use other solution we have right now
             else:
-                print("Too big for brute force")
-                # TODO: when other solvers, loop through them and check if
-                # each soln valid - if so, pick tree w max leaves
-                print("Trying greedy")
+                fo1.write("Too big for brute force\n")
+                fo2.write("Too big for brute force\n")
+                fo1.write("Trying greedy\n")
+                fo2.write("Trying greedy\n")
+                
                 (greedy_leaves, greedy_tree) = find_st_greedy_ds(graph)
-                print("Going with greedy")
-                print(f"Final Leaves: {greedy_leaves}")
-                print("Final Tree:")
-                if greedy_tree.numberOfEdges < 10:
-                    greedy_tree.print_gv_bi()
+                (LP_leaves, LP_tree) = find_st_LP(graph, time_limit=(3*60+30),
+                                                  baseline=greedy_leaves)
+                if LP_leaves is not None and graph.st_checker(LP_tree):
+                    sols.append((LP_tree, LP_leaves))
+                    LP_better += 1
+                    fo1.write("LP did best\n")
+                    fo2.write("LP did best\n")
+                    fo1.write(f"Final Leaves: {LP_leaves}\n")
+                    fo2.write(f"Final Leaves: {LP_leaves}\n")
+                    fo2.write("Final Tree:\n")
+                    if LP_tree.numberOfEdges < 50:
+                        fo2.write(LP_tree.ret_gv_bi())
+                    else:
+                        fo2.write(f"Omitting solution graph viz for size - {LP_tree.numberOfEdges} > 50 edges\n")
                 else:
-                    print(f"Omitting solution graph viz for size - {greedy_tree.numberOfEdges} > 10 edges")
-                sols.append((greedy_tree,greedy_leaves))
+                    sols.append((greedy_tree,greedy_leaves))
+                    greedy_better += 1
+                    fo1.write("Greedy did best\n")
+                    fo2.write("Greedy did best\n")
+                    fo1.write(f"Final Leaves: {greedy_leaves}\n")
+                    fo2.write(f"Final Leaves: {greedy_leaves}\n")
+                    fo2.write("Final Tree:\n")
+                    if greedy_tree.numberOfEdges < 50:
+                        fo2.write(greedy_tree.ret_gv_bi())
+                    else:
+                        fo2.write(f"Omitting solution graph viz for size - {greedy_tree.numberOfEdges} > 50 edges\n")
         else:
-            print(f"Graph is unconnected.")
+            fo1.write(f"Graph is unconnected.\n")
+            fo2.write(f"Graph is unconnected.\n")
             sols.append((Graph(0,[]),0))
-        # print("\n")
+    fo1.close()
+    fo2.close()
     print(f"Number of solutions: {len(sols)}")
     return sols
 
@@ -341,7 +495,15 @@ def get_all_hard_in(filename):
 if __name__ == "__main__":
     # test_st_greedy_ds()
     inps = get_all_hard_in("all-hard.in")
-    sols_ensembler = ensembler(inps)
+    # sols_ensembler = ensembler(inps)
+    # test_st_LP("test_lp.txt")
+    # fi_cases = get_input("fi_hard.in")
+    # gen_hard_in("hard.in", fi_cases)
+    # inps = get_input("hard.in")
+    sols_ensembler = ensembler(inps, 
+                               log_short="log_short.txt",
+                               log_long="log_long.txt",
+                               progress_log="progress_log.txt")
     # test_ensembler(inps)
     # sols = solve_using_greedy(inps)
-    gen_output("all-hard.out", sols_ensembler)
+    gen_output("ensembler-all-hard.out", sols_ensembler)
