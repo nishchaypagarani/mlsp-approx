@@ -274,17 +274,22 @@ def solve_and_compare_LP(graphs: list[Graph], solvers):
                 fo2.write("Graph not connected")
             print("\n\n\n")
 
-def test_st_LP():
+def test_st_LP(fname_out = None):
     a = Graph(5, [(0,1), (1,2),(1,3),(2,3),(2,4)])
     b = Graph(6, [(0,1), (1,2),(1,3),(2,3),(2,4),(4,5),(5,3)])
     c = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5)])
     d = Graph(6,[(0,1),(0,2),(0,3),(0,4),(0,5),(1,2),(2,3),(3,4),(4,5),(2,4),(1,4),(1,5)])
     e = Graph(2, [(0,1)])
-    # print("\n\n\n Test case A: ")
-    # a.print_gv_bi()
-    # (a_leaves, a_tree_opt) = find_st_LP(a)
-    # print(a_leaves)
-    # a_tree_opt.print_gv_bi()
+    graphs = {"a":a, "b":b, "c":c, "d":d, "e":e}
+    if fname_out is not None:
+        with open(fname_out, 'w') as fo:
+            for name, graph in graphs.items():
+                fo.write(f"Test case: {name} \n")
+                fo.write(graph.ret_gv_bi())
+                (leaves, tree_opt) = find_st_LP(graph)
+                fo.write(f"Leaves: {leaves}\n")
+                fo.write(tree_opt.ret_gv_bi())
+                fo.write(f"Output is a tree: {graph.st_checker(tree_opt)}\n\n")
     # print("\n\n\n Test case B: ")
     # b.print_gv_bi()
     # (b_leaves, b_tree_opt) = find_st_LP(b)
@@ -306,7 +311,7 @@ def test_st_LP():
     # (e_leaves, e_tree_opt) = find_st_LP(e)
     # print(e_leaves)
     # e_tree_opt.print_gv_bi()
-    solve_and_compare_LP([a, b, c, d, e], ["bf", "greedy", "lp"])
+    # solve_and_compare_LP([a, b, c, d, e], ["bf", "greedy", "lp"])
 
 
 def get_input(filename):
@@ -440,8 +445,8 @@ def test_ensembler(inps):
 
 if __name__ == "__main__":
     # test_st_greedy_ds()
-    test_st_LP()
-    # fi_cases = get_input("fi_hard.in")
+    # test_st_LP("test_lp.txt")
+    fi_cases = get_input("fi_hard.in")
     # gen_hard_in("hard.in", fi_cases)
     # inps = get_input("hard.in")
     # sols_ensembler = ensembler(inps)
