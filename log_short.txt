@@ -16,42 +16,6 @@ Final Leaves: 95
 ----- Graph 4 / 524 -----
 Too big for brute force
 Trying greedy
------ Graph 1 / 524 -----
-Too big for brute force
-Trying greedy
-Greedy did best
-Final Leaves: 98
------ Graph 2 / 524 -----
-Too big for brute force
-Trying greedy
-Greedy did best
-Final Leaves: 94
------ Graph 3 / 524 -----
-Too big for brute force
-Trying greedy
-Greedy did best
-Final Leaves: 95
------ Graph 4 / 524 -----
-Too big for brute force
-Trying greedy
------ Graph 1 / 524 -----
-Too big for brute force
-Trying greedy
-Greedy did best
-Final Leaves: 98
------ Graph 2 / 524 -----
-Too big for brute force
-Trying greedy
-Greedy did best
-Final Leaves: 94
------ Graph 3 / 524 -----
-Too big for brute force
-Trying greedy
-Greedy did best
-Final Leaves: 95
------ Graph 4 / 524 -----
-Too big for brute force
-Trying greedy
 Greedy did best
 Final Leaves: 64
 ----- Graph 5 / 524 -----
@@ -60,6 +24,16 @@ Trying greedy
 Greedy did best
 Final Leaves: 57
 ----- Graph 6 / 524 -----
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 47
+----- Graph 7 / 524 -----
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 54
+----- Graph 8 / 524 -----
 Too big for brute force
 Trying greedy
 ----- Graph 1 / 524 -----

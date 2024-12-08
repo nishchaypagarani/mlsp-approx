@@ -8167,3 +8167,8183 @@ Greedy did best
 Final Leaves: 60
 Final Tree:
 Omitting solution graph viz for size - 74 > 50 edges
+----- Graph 1 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 2 / 524 -----
+Omitting input graph viz for size - 1959 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 96 > 50 edges
+----- Graph 3 / 524 -----
+Omitting input graph viz for size - 550 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 4 / 524 -----
+Omitting input graph viz for size - 261 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 64
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 5 / 524 -----
+Omitting input graph viz for size - 508 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 57
+Final Tree:
+Omitting solution graph viz for size - 64 > 50 edges
+----- Graph 6 / 524 -----
+Omitting input graph viz for size - 141 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 47
+Final Tree:
+Omitting solution graph viz for size - 93 > 50 edges
+----- Graph 7 / 524 -----
+Omitting input graph viz for size - 160 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 54
+Final Tree:
+Omitting solution graph viz for size - 67 > 50 edges
+----- Graph 8 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 6 
+1 -> 2 
+1 -> 7 
+2 -> 3 
+2 -> 8 
+3 -> 4 
+3 -> 9 
+4 -> 5 
+4 -> 10 
+5 -> 11 
+6 -> 7 
+6 -> 12 
+7 -> 8 
+7 -> 13 
+8 -> 9 
+8 -> 14 
+9 -> 10 
+9 -> 15 
+10 -> 11 
+10 -> 16 
+11 -> 17 
+12 -> 13 
+12 -> 18 
+13 -> 14 
+13 -> 19 
+14 -> 15 
+14 -> 20 
+15 -> 16 
+15 -> 21 
+16 -> 17 
+16 -> 22 
+17 -> 23 
+18 -> 19 
+18 -> 24 
+19 -> 20 
+19 -> 25 
+20 -> 21 
+20 -> 26 
+21 -> 22 
+21 -> 27 
+22 -> 23 
+22 -> 28 
+23 -> 29 
+24 -> 25 
+25 -> 26 
+26 -> 27 
+27 -> 28 
+28 -> 29 
+} 
+Too big for brute force
+Trying greedy
+----- Graph 1 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 2 / 524 -----
+Omitting input graph viz for size - 1959 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 96 > 50 edges
+----- Graph 3 / 524 -----
+Omitting input graph viz for size - 550 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 4 / 524 -----
+Omitting input graph viz for size - 261 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 64
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 5 / 524 -----
+Omitting input graph viz for size - 508 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 57
+Final Tree:
+Omitting solution graph viz for size - 64 > 50 edges
+----- Graph 6 / 524 -----
+Omitting input graph viz for size - 141 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 47
+Final Tree:
+Omitting solution graph viz for size - 93 > 50 edges
+----- Graph 7 / 524 -----
+Omitting input graph viz for size - 160 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 54
+Final Tree:
+Omitting solution graph viz for size - 67 > 50 edges
+----- Graph 8 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 6 
+1 -> 2 
+1 -> 7 
+2 -> 3 
+2 -> 8 
+3 -> 4 
+3 -> 9 
+4 -> 5 
+4 -> 10 
+5 -> 11 
+6 -> 7 
+6 -> 12 
+7 -> 8 
+7 -> 13 
+8 -> 9 
+8 -> 14 
+9 -> 10 
+9 -> 15 
+10 -> 11 
+10 -> 16 
+11 -> 17 
+12 -> 13 
+12 -> 18 
+13 -> 14 
+13 -> 19 
+14 -> 15 
+14 -> 20 
+15 -> 16 
+15 -> 21 
+16 -> 17 
+16 -> 22 
+17 -> 23 
+18 -> 19 
+18 -> 24 
+19 -> 20 
+19 -> 25 
+20 -> 21 
+20 -> 26 
+21 -> 22 
+21 -> 27 
+22 -> 23 
+22 -> 28 
+23 -> 29 
+24 -> 25 
+25 -> 26 
+26 -> 27 
+27 -> 28 
+28 -> 29 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 18
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 7 
+3 -> 4 
+4 -> 10 
+4 -> 5 
+6 -> 7 
+7 -> 8 
+7 -> 13 
+9 -> 10 
+10 -> 16 
+10 -> 11 
+12 -> 13 
+13 -> 14 
+13 -> 19 
+15 -> 21 
+16 -> 22 
+16 -> 17 
+18 -> 19 
+18 -> 24 
+19 -> 20 
+19 -> 25 
+20 -> 21 
+20 -> 26 
+21 -> 22 
+21 -> 27 
+22 -> 23 
+22 -> 28 
+23 -> 29 
+} 
+----- Graph 9 / 524 -----
+Omitting input graph viz for size - 144 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 48
+Final Tree:
+Omitting solution graph viz for size - 80 > 50 edges
+----- Graph 10 / 524 -----
+Omitting input graph viz for size - 1585 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 73
+Final Tree:
+Omitting solution graph viz for size - 76 > 50 edges
+----- Graph 11 / 524 -----
+Omitting input graph viz for size - 137 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 12 / 524 -----
+Omitting input graph viz for size - 1207 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 66
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 13 / 524 -----
+Omitting input graph viz for size - 1587 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 91
+Final Tree:
+Omitting solution graph viz for size - 95 > 50 edges
+----- Graph 14 / 524 -----
+Omitting input graph viz for size - 775 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 70
+Final Tree:
+Omitting solution graph viz for size - 70 > 50 edges
+----- Graph 15 / 524 -----
+Omitting input graph viz for size - 89 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+Omitting solution graph viz for size - 62 > 50 edges
+----- Graph 16 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 17 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 18 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 19 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 90
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 20 / 524 -----
+Omitting input graph viz for size - 148 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 21 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 22 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 23 / 524 -----
+Omitting input graph viz for size - 1644 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 24 / 524 -----
+Omitting input graph viz for size - 124 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 25 / 524 -----
+Omitting input graph viz for size - 153 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 52
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 26 / 524 -----
+Omitting input graph viz for size - 189 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 65
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 27 / 524 -----
+Omitting input graph viz for size - 1000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 92
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 28 / 524 -----
+Omitting input graph viz for size - 199 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 29 / 524 -----
+Omitting input graph viz for size - 186 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 74
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 30 / 524 -----
+Omitting input graph viz for size - 163 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 64
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 31 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 32 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 91
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 33 / 524 -----
+Omitting input graph viz for size - 220 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 34 / 524 -----
+Omitting input graph viz for size - 154 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 35 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 36 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 37 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 79
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 38 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 39 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 81
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 40 / 524 -----
+Omitting input graph viz for size - 1985 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 41 / 524 -----
+Omitting input graph viz for size - 207 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 42 / 524 -----
+Omitting input graph viz for size - 208 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 43 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 44 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 45 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 46 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 63 > 50 edges
+----- Graph 47 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 48 / 524 -----
+Omitting input graph viz for size - 149 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 66
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 49 / 524 -----
+Omitting input graph viz for size - 560 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 86
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 50 / 524 -----
+Omitting input graph viz for size - 231 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 82
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 51 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 52 / 524 -----
+Omitting input graph viz for size - 1990 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 53 / 524 -----
+Omitting input graph viz for size - 1587 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 54 / 524 -----
+Omitting input graph viz for size - 197 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 55 / 524 -----
+Omitting input graph viz for size - 1739 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 56 / 524 -----
+Omitting input graph viz for size - 132 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 45
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 57 / 524 -----
+Omitting input graph viz for size - 550 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 58 / 524 -----
+Omitting input graph viz for size - 700 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 59 / 524 -----
+Omitting input graph viz for size - 800 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 90
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 60 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 61 / 524 -----
+Omitting input graph viz for size - 261 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 64
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 62 / 524 -----
+Omitting input graph viz for size - 984 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 63 / 524 -----
+Omitting input graph viz for size - 1972 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 64 / 524 -----
+Omitting input graph viz for size - 1015 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 92
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 65 / 524 -----
+Omitting input graph viz for size - 161 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 66 / 524 -----
+Omitting input graph viz for size - 188 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 67 / 524 -----
+Omitting input graph viz for size - 870 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 68 / 524 -----
+Omitting input graph viz for size - 500 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 83
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 69 / 524 -----
+Omitting input graph viz for size - 455 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 85
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 70 / 524 -----
+Omitting input graph viz for size - 150 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 27
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 71 / 524 -----
+Omitting input graph viz for size - 198 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 72 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 73 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 74 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 91
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 75 / 524 -----
+Omitting input graph viz for size - 957 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 76 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 77 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 78 / 524 -----
+Omitting input graph viz for size - 1748 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 79 / 524 -----
+Omitting input graph viz for size - 543 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 91
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 80 / 524 -----
+Omitting input graph viz for size - 431 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 87
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 81 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 82 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 83 / 524 -----
+Omitting input graph viz for size - 372 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 84 / 524 -----
+Omitting input graph viz for size - 376 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 75
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 85 / 524 -----
+Omitting input graph viz for size - 369 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 86 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 87 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 88 / 524 -----
+Omitting input graph viz for size - 291 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 89 / 524 -----
+Omitting input graph viz for size - 1000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 90 / 524 -----
+Omitting input graph viz for size - 143 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 91 / 524 -----
+Omitting input graph viz for size - 1992 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 92 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 93 / 524 -----
+Omitting input graph viz for size - 150 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 51
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 94 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 95 / 524 -----
+Omitting input graph viz for size - 132 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 96 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 97 / 524 -----
+Omitting input graph viz for size - 1699 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 98 / 524 -----
+Omitting input graph viz for size - 180 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 59
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 99 / 524 -----
+Omitting input graph viz for size - 1559 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 92
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 100 / 524 -----
+Omitting input graph viz for size - 1575 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 93
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 101 / 524 -----
+Omitting input graph viz for size - 99 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 2
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 102 / 524 -----
+Omitting input graph viz for size - 477 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 47
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 103 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 104 / 524 -----
+Omitting input graph viz for size - 1999 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 92
+Final Tree:
+Omitting solution graph viz for size - 95 > 50 edges
+----- Graph 105 / 524 -----
+Omitting input graph viz for size - 1999 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 91
+Final Tree:
+Omitting solution graph viz for size - 94 > 50 edges
+----- Graph 106 / 524 -----
+Omitting input graph viz for size - 1142 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 107 / 524 -----
+Omitting input graph viz for size - 1628 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 108 / 524 -----
+Omitting input graph viz for size - 1295 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 109 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 110 / 524 -----
+Omitting input graph viz for size - 101 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 5
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 111 / 524 -----
+Omitting input graph viz for size - 965 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 112 / 524 -----
+Omitting input graph viz for size - 300 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 73
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 113 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 114 / 524 -----
+Omitting input graph viz for size - 163 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 115 / 524 -----
+Omitting input graph viz for size - 154 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 58
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 116 / 524 -----
+Omitting input graph viz for size - 154 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 58
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 117 / 524 -----
+Omitting input graph viz for size - 154 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 58
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 118 / 524 -----
+Omitting input graph viz for size - 154 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 58
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 119 / 524 -----
+Omitting input graph viz for size - 154 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 58
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 120 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+1 -> 2 
+1 -> 6 
+1 -> 7 
+2 -> 3 
+2 -> 4 
+2 -> 5 
+3 -> 8 
+3 -> 9 
+3 -> 10 
+4 -> 8 
+8 -> 9 
+8 -> 10 
+9 -> 10 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 8
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+1 -> 2 
+1 -> 6 
+1 -> 7 
+2 -> 3 
+2 -> 4 
+2 -> 5 
+3 -> 8 
+3 -> 9 
+3 -> 10 
+} 
+----- Graph 121 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+1 -> 2 
+1 -> 4 
+1 -> 5 
+2 -> 3 
+2 -> 5 
+3 -> 4 
+3 -> 5 
+4 -> 5 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 4
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+1 -> 5 
+} 
+----- Graph 122 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 9 
+1 -> 9 
+1 -> 2 
+1 -> 3 
+2 -> 3 
+2 -> 4 
+2 -> 5 
+3 -> 4 
+3 -> 6 
+3 -> 9 
+4 -> 5 
+4 -> 6 
+5 -> 6 
+5 -> 7 
+6 -> 7 
+6 -> 8 
+6 -> 9 
+7 -> 8 
+8 -> 9 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 7
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+1 -> 2 
+2 -> 3 
+2 -> 4 
+2 -> 5 
+3 -> 6 
+3 -> 9 
+6 -> 7 
+6 -> 8 
+} 
+----- Graph 123 / 524 -----
+Omitting input graph viz for size - 1953 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 62 > 50 edges
+----- Graph 124 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 3 
+1 -> 2 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 6 
+2 -> 6 
+2 -> 7 
+2 -> 8 
+2 -> 9 
+3 -> 4 
+3 -> 5 
+3 -> 10 
+3 -> 11 
+4 -> 5 
+4 -> 6 
+4 -> 11 
+5 -> 6 
+5 -> 7 
+6 -> 8 
+6 -> 7 
+7 -> 8 
+7 -> 9 
+8 -> 9 
+8 -> 10 
+9 -> 10 
+9 -> 11 
+10 -> 11 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 9
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 6 
+2 -> 7 
+2 -> 8 
+} 
+----- Graph 125 / 524 -----
+Omitting input graph viz for size - 190 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 19
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+} 
+----- Graph 126 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+1 -> 2 
+1 -> 3 
+1 -> 4 
+2 -> 3 
+2 -> 4 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+5 -> 7 
+5 -> 8 
+5 -> 9 
+6 -> 7 
+6 -> 8 
+6 -> 9 
+7 -> 8 
+7 -> 9 
+8 -> 9 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 8
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 4 
+1 -> 4 
+2 -> 4 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+5 -> 7 
+5 -> 8 
+5 -> 9 
+} 
+----- Graph 127 / 524 -----
+Omitting input graph viz for size - 85 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 29
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 11 
+2 -> 3 
+3 -> 4 
+3 -> 13 
+4 -> 5 
+4 -> 14 
+5 -> 6 
+5 -> 15 
+6 -> 16 
+7 -> 8 
+8 -> 18 
+8 -> 9 
+10 -> 11 
+11 -> 12 
+11 -> 21 
+17 -> 18 
+18 -> 28 
+18 -> 19 
+20 -> 21 
+21 -> 22 
+21 -> 31 
+23 -> 33 
+24 -> 34 
+25 -> 35 
+26 -> 36 
+27 -> 37 
+28 -> 38 
+28 -> 29 
+30 -> 31 
+30 -> 40 
+31 -> 32 
+31 -> 41 
+32 -> 33 
+32 -> 42 
+33 -> 34 
+33 -> 43 
+34 -> 35 
+34 -> 44 
+35 -> 36 
+35 -> 45 
+36 -> 37 
+36 -> 46 
+37 -> 38 
+37 -> 47 
+38 -> 39 
+38 -> 48 
+39 -> 49 
+} 
+----- Graph 128 / 524 -----
+Omitting input graph viz for size - 275 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 59 > 50 edges
+----- Graph 129 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+2 -> 3 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+6 -> 7 
+7 -> 8 
+8 -> 9 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+2 -> 3 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+6 -> 7 
+7 -> 8 
+8 -> 9 
+} 
+----- Graph 130 / 524 -----
+digraph G { 
+edge [dir = none] 
+} 
+Going with brute force
+Single node case----- Graph 131 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+----- Graph 132 / 524 -----
+Omitting input graph viz for size - 60 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 30
+Final Tree:
+Omitting solution graph viz for size - 59 > 50 edges
+----- Graph 133 / 524 -----
+Omitting input graph viz for size - 60 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 30
+Final Tree:
+Omitting solution graph viz for size - 59 > 50 edges
+----- Graph 134 / 524 -----
+Omitting input graph viz for size - 100 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 135 / 524 -----
+Omitting input graph viz for size - 100 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 136 / 524 -----
+Omitting input graph viz for size - 985 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 93
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 137 / 524 -----
+Omitting input graph viz for size - 975 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 138 / 524 -----
+Omitting input graph viz for size - 975 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 139 / 524 -----
+Omitting input graph viz for size - 967 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 140 / 524 -----
+Omitting input graph viz for size - 975 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 93
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 141 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 63 > 50 edges
+----- Graph 142 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 143 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 79 > 50 edges
+----- Graph 144 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 145 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 63 > 50 edges
+----- Graph 146 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 63 > 50 edges
+----- Graph 147 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 148 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 149 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 79 > 50 edges
+----- Graph 150 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 79 > 50 edges
+----- Graph 151 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 152 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 153 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 2 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+} 
+----- Graph 154 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+2 -> 3 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+} 
+----- Graph 155 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+1 -> 3 
+1 -> 7 
+1 -> 9 
+2 -> 4 
+2 -> 6 
+8 -> 12 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 19
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+} 
+----- Graph 156 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 6 
+1 -> 2 
+2 -> 6 
+2 -> 5 
+2 -> 4 
+2 -> 3 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 5
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 6 
+1 -> 2 
+2 -> 5 
+2 -> 4 
+2 -> 3 
+} 
+----- Graph 157 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+2 -> 4 
+2 -> 5 
+3 -> 4 
+4 -> 5 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 4
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+2 -> 4 
+2 -> 5 
+} 
+----- Graph 158 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+1 -> 2 
+1 -> 3 
+2 -> 3 
+} 
+Going with brute force
+Final Leaves: 3
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 3 
+1 -> 2 
+} 
+----- Graph 159 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+----- Graph 160 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+2 -> 3 
+3 -> 4 
+3 -> 8 
+4 -> 5 
+4 -> 6 
+4 -> 7 
+5 -> 6 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 6
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+2 -> 3 
+3 -> 8 
+4 -> 6 
+4 -> 7 
+} 
+----- Graph 161 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 7 
+1 -> 5 
+1 -> 3 
+2 -> 3 
+2 -> 4 
+3 -> 7 
+3 -> 5 
+3 -> 4 
+3 -> 6 
+4 -> 5 
+4 -> 6 
+5 -> 7 
+5 -> 6 
+5 -> 8 
+7 -> 8 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 6
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 7 
+1 -> 5 
+1 -> 3 
+2 -> 3 
+3 -> 4 
+3 -> 6 
+5 -> 8 
+} 
+----- Graph 162 / 524 -----
+Omitting input graph viz for size - 1138 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 49
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 41 
+1 -> 41 
+2 -> 41 
+3 -> 41 
+4 -> 41 
+5 -> 41 
+6 -> 41 
+7 -> 41 
+8 -> 41 
+9 -> 41 
+10 -> 41 
+11 -> 41 
+12 -> 41 
+13 -> 41 
+14 -> 41 
+15 -> 41 
+16 -> 41 
+17 -> 41 
+18 -> 41 
+19 -> 41 
+20 -> 41 
+21 -> 41 
+22 -> 41 
+23 -> 41 
+24 -> 41 
+25 -> 41 
+26 -> 41 
+27 -> 41 
+28 -> 41 
+29 -> 41 
+30 -> 41 
+31 -> 41 
+32 -> 41 
+33 -> 41 
+34 -> 41 
+35 -> 41 
+36 -> 41 
+37 -> 41 
+38 -> 41 
+39 -> 41 
+40 -> 41 
+41 -> 46 
+41 -> 42 
+41 -> 49 
+41 -> 47 
+41 -> 45 
+41 -> 43 
+41 -> 44 
+41 -> 48 
+} 
+----- Graph 163 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 4 
+0 -> 5 
+1 -> 2 
+1 -> 5 
+1 -> 6 
+2 -> 3 
+2 -> 6 
+2 -> 7 
+3 -> 7 
+4 -> 5 
+4 -> 8 
+4 -> 9 
+5 -> 6 
+5 -> 9 
+5 -> 10 
+6 -> 7 
+6 -> 10 
+6 -> 11 
+7 -> 11 
+8 -> 9 
+8 -> 12 
+8 -> 13 
+9 -> 10 
+9 -> 13 
+9 -> 14 
+10 -> 11 
+10 -> 14 
+10 -> 15 
+11 -> 15 
+12 -> 13 
+13 -> 14 
+14 -> 15 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 10
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 5 
+1 -> 5 
+2 -> 6 
+2 -> 3 
+4 -> 5 
+5 -> 6 
+5 -> 9 
+5 -> 10 
+6 -> 7 
+6 -> 11 
+8 -> 9 
+8 -> 12 
+9 -> 13 
+9 -> 14 
+10 -> 15 
+} 
+----- Graph 164 / 524 -----
+Omitting input graph viz for size - 63 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 18
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 4 
+1 -> 4 
+2 -> 4 
+3 -> 4 
+4 -> 7 
+4 -> 8 
+4 -> 9 
+4 -> 10 
+5 -> 7 
+6 -> 7 
+7 -> 11 
+7 -> 12 
+11 -> 13 
+11 -> 14 
+11 -> 15 
+13 -> 16 
+13 -> 17 
+13 -> 18 
+13 -> 19 
+13 -> 20 
+16 -> 21 
+16 -> 22 
+} 
+----- Graph 165 / 524 -----
+Omitting input graph viz for size - 78 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 14
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 11 
+0 -> 13 
+0 -> 17 
+1 -> 5 
+2 -> 5 
+3 -> 5 
+4 -> 5 
+5 -> 6 
+5 -> 7 
+5 -> 8 
+5 -> 9 
+5 -> 10 
+5 -> 12 
+5 -> 15 
+5 -> 11 
+14 -> 15 
+15 -> 16 
+} 
+----- Graph 166 / 524 -----
+Omitting input graph viz for size - 52 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 16
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 4 
+1 -> 4 
+2 -> 4 
+3 -> 4 
+4 -> 10 
+4 -> 17 
+4 -> 18 
+5 -> 10 
+6 -> 10 
+7 -> 10 
+8 -> 10 
+9 -> 10 
+11 -> 17 
+12 -> 17 
+13 -> 17 
+14 -> 17 
+15 -> 17 
+16 -> 17 
+} 
+----- Graph 167 / 524 -----
+Omitting input graph viz for size - 1454 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 55
+Final Tree:
+Omitting solution graph viz for size - 59 > 50 edges
+----- Graph 168 / 524 -----
+Omitting input graph viz for size - 51 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 16
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 9 
+0 -> 2 
+0 -> 5 
+0 -> 8 
+0 -> 15 
+3 -> 5 
+4 -> 5 
+5 -> 6 
+5 -> 7 
+10 -> 15 
+10 -> 11 
+10 -> 19 
+10 -> 12 
+10 -> 18 
+13 -> 15 
+14 -> 15 
+15 -> 16 
+15 -> 17 
+} 
+----- Graph 169 / 524 -----
+Omitting input graph viz for size - 169 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 59
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 170 / 524 -----
+Omitting input graph viz for size - 188 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 171 / 524 -----
+Omitting input graph viz for size - 212 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 66
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 172 / 524 -----
+Omitting input graph viz for size - 134 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 42
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 173 / 524 -----
+Omitting input graph viz for size - 178 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 174 / 524 -----
+Omitting input graph viz for size - 252 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 71
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 175 / 524 -----
+Omitting input graph viz for size - 180 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 176 / 524 -----
+Omitting input graph viz for size - 1985 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 177 / 524 -----
+Omitting input graph viz for size - 284 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 178 / 524 -----
+Omitting input graph viz for size - 168 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 61
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 179 / 524 -----
+Omitting input graph viz for size - 130 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 57
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 180 / 524 -----
+Omitting input graph viz for size - 242 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 181 / 524 -----
+Omitting input graph viz for size - 134 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 46
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 182 / 524 -----
+Omitting input graph viz for size - 132 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 45
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 183 / 524 -----
+Omitting input graph viz for size - 239 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 184 / 524 -----
+Omitting input graph viz for size - 260 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 185 / 524 -----
+Omitting input graph viz for size - 1225 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 49
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+0 -> 20 
+0 -> 21 
+0 -> 22 
+0 -> 23 
+0 -> 24 
+0 -> 25 
+0 -> 26 
+0 -> 27 
+0 -> 28 
+0 -> 29 
+0 -> 30 
+0 -> 31 
+0 -> 32 
+0 -> 33 
+0 -> 34 
+0 -> 35 
+0 -> 36 
+0 -> 37 
+0 -> 38 
+0 -> 39 
+0 -> 40 
+0 -> 41 
+0 -> 42 
+0 -> 43 
+0 -> 44 
+0 -> 45 
+0 -> 46 
+0 -> 47 
+0 -> 48 
+0 -> 49 
+} 
+----- Graph 186 / 524 -----
+Omitting input graph viz for size - 50 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 20
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 23 
+1 -> 29 
+1 -> 16 
+1 -> 44 
+2 -> 18 
+2 -> 31 
+3 -> 38 
+3 -> 42 
+3 -> 35 
+3 -> 12 
+3 -> 28 
+4 -> 8 
+4 -> 18 
+5 -> 43 
+5 -> 30 
+6 -> 17 
+7 -> 47 
+7 -> 26 
+7 -> 33 
+8 -> 30 
+8 -> 32 
+9 -> 38 
+10 -> 22 
+10 -> 41 
+11 -> 48 
+12 -> 40 
+13 -> 30 
+13 -> 17 
+14 -> 34 
+15 -> 33 
+15 -> 37 
+16 -> 39 
+16 -> 20 
+17 -> 47 
+17 -> 27 
+18 -> 21 
+19 -> 20 
+19 -> 36 
+22 -> 37 
+23 -> 29 
+24 -> 40 
+25 -> 47 
+28 -> 46 
+29 -> 43 
+33 -> 48 
+34 -> 40 
+34 -> 45 
+38 -> 43 
+46 -> 49 
+} 
+----- Graph 187 / 524 -----
+Omitting input graph viz for size - 50 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 49 
+1 -> 2 
+2 -> 3 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+6 -> 7 
+7 -> 8 
+8 -> 9 
+9 -> 10 
+10 -> 11 
+11 -> 12 
+12 -> 13 
+13 -> 14 
+14 -> 15 
+15 -> 16 
+16 -> 17 
+17 -> 18 
+18 -> 19 
+19 -> 20 
+20 -> 21 
+21 -> 22 
+22 -> 23 
+23 -> 24 
+24 -> 25 
+25 -> 26 
+26 -> 27 
+27 -> 28 
+28 -> 29 
+29 -> 30 
+30 -> 31 
+31 -> 32 
+32 -> 33 
+33 -> 34 
+34 -> 35 
+35 -> 36 
+36 -> 37 
+37 -> 38 
+38 -> 39 
+39 -> 40 
+40 -> 41 
+41 -> 42 
+42 -> 43 
+43 -> 44 
+44 -> 45 
+45 -> 46 
+47 -> 48 
+48 -> 49 
+} 
+----- Graph 188 / 524 -----
+Omitting input graph viz for size - 601 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 48
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 7 
+1 -> 7 
+2 -> 7 
+3 -> 7 
+4 -> 7 
+5 -> 7 
+6 -> 7 
+7 -> 8 
+7 -> 9 
+7 -> 10 
+7 -> 11 
+7 -> 12 
+7 -> 13 
+7 -> 14 
+7 -> 15 
+7 -> 16 
+7 -> 17 
+7 -> 18 
+7 -> 19 
+7 -> 20 
+7 -> 21 
+7 -> 22 
+7 -> 23 
+7 -> 24 
+7 -> 41 
+25 -> 41 
+26 -> 41 
+27 -> 41 
+28 -> 41 
+29 -> 41 
+30 -> 41 
+31 -> 41 
+32 -> 41 
+33 -> 41 
+34 -> 41 
+35 -> 41 
+36 -> 41 
+37 -> 41 
+38 -> 41 
+39 -> 41 
+40 -> 41 
+41 -> 42 
+41 -> 43 
+41 -> 44 
+41 -> 45 
+41 -> 46 
+41 -> 47 
+41 -> 48 
+41 -> 49 
+} 
+----- Graph 189 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 6 
+1 -> 7 
+1 -> 8 
+1 -> 9 
+1 -> 10 
+1 -> 11 
+1 -> 12 
+1 -> 13 
+1 -> 14 
+1 -> 15 
+1 -> 16 
+1 -> 17 
+1 -> 18 
+1 -> 19 
+1 -> 20 
+1 -> 21 
+1 -> 22 
+1 -> 23 
+1 -> 24 
+1 -> 25 
+1 -> 26 
+1 -> 27 
+1 -> 28 
+1 -> 29 
+1 -> 30 
+1 -> 31 
+1 -> 32 
+1 -> 33 
+1 -> 34 
+1 -> 35 
+1 -> 36 
+1 -> 37 
+1 -> 38 
+1 -> 39 
+1 -> 40 
+1 -> 41 
+1 -> 42 
+1 -> 43 
+1 -> 44 
+1 -> 45 
+1 -> 46 
+1 -> 47 
+1 -> 48 
+1 -> 49 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 49
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 6 
+1 -> 7 
+1 -> 8 
+1 -> 9 
+1 -> 10 
+1 -> 11 
+1 -> 12 
+1 -> 13 
+1 -> 14 
+1 -> 15 
+1 -> 16 
+1 -> 17 
+1 -> 18 
+1 -> 19 
+1 -> 20 
+1 -> 21 
+1 -> 22 
+1 -> 23 
+1 -> 24 
+1 -> 25 
+1 -> 26 
+1 -> 27 
+1 -> 28 
+1 -> 29 
+1 -> 30 
+1 -> 31 
+1 -> 32 
+1 -> 33 
+1 -> 34 
+1 -> 35 
+1 -> 36 
+1 -> 37 
+1 -> 38 
+1 -> 39 
+1 -> 40 
+1 -> 41 
+1 -> 42 
+1 -> 43 
+1 -> 44 
+1 -> 45 
+1 -> 46 
+1 -> 47 
+1 -> 48 
+1 -> 49 
+} 
+----- Graph 190 / 524 -----
+Omitting input graph viz for size - 59 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 25
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 25 
+1 -> 25 
+2 -> 25 
+2 -> 36 
+2 -> 10 
+3 -> 25 
+3 -> 30 
+3 -> 41 
+4 -> 25 
+4 -> 46 
+5 -> 25 
+5 -> 42 
+6 -> 25 
+6 -> 24 
+7 -> 25 
+8 -> 25 
+8 -> 28 
+9 -> 25 
+10 -> 29 
+10 -> 43 
+10 -> 35 
+11 -> 18 
+11 -> 34 
+12 -> 18 
+13 -> 26 
+14 -> 26 
+15 -> 18 
+16 -> 39 
+17 -> 26 
+18 -> 31 
+19 -> 31 
+20 -> 21 
+20 -> 31 
+21 -> 25 
+22 -> 39 
+23 -> 28 
+23 -> 27 
+24 -> 49 
+24 -> 45 
+24 -> 48 
+25 -> 32 
+26 -> 35 
+27 -> 38 
+29 -> 39 
+32 -> 44 
+33 -> 37 
+35 -> 47 
+37 -> 43 
+38 -> 40 
+} 
+----- Graph 191 / 524 -----
+Omitting input graph viz for size - 645 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 43
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 11 
+1 -> 11 
+2 -> 11 
+3 -> 11 
+4 -> 11 
+4 -> 42 
+4 -> 43 
+5 -> 11 
+6 -> 11 
+7 -> 11 
+8 -> 11 
+9 -> 11 
+10 -> 11 
+11 -> 12 
+11 -> 13 
+11 -> 14 
+11 -> 15 
+11 -> 16 
+11 -> 17 
+11 -> 18 
+11 -> 19 
+11 -> 20 
+11 -> 21 
+11 -> 22 
+11 -> 23 
+11 -> 24 
+11 -> 25 
+11 -> 26 
+11 -> 27 
+11 -> 28 
+11 -> 29 
+11 -> 30 
+11 -> 31 
+11 -> 32 
+11 -> 33 
+11 -> 34 
+11 -> 41 
+11 -> 45 
+11 -> 46 
+11 -> 47 
+11 -> 38 
+13 -> 44 
+15 -> 48 
+17 -> 39 
+22 -> 35 
+22 -> 36 
+29 -> 37 
+29 -> 40 
+29 -> 49 
+} 
+----- Graph 192 / 524 -----
+Omitting input graph viz for size - 595 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 74 > 50 edges
+----- Graph 193 / 524 -----
+Omitting input graph viz for size - 1979 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 194 / 524 -----
+Omitting input graph viz for size - 315 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 195 / 524 -----
+Omitting input graph viz for size - 105 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 196 / 524 -----
+Omitting input graph viz for size - 98 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 24
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 10 
+1 -> 5 
+1 -> 13 
+2 -> 6 
+3 -> 5 
+4 -> 5 
+4 -> 7 
+4 -> 8 
+4 -> 15 
+4 -> 24 
+4 -> 28 
+5 -> 10 
+5 -> 17 
+5 -> 19 
+5 -> 29 
+6 -> 10 
+6 -> 18 
+6 -> 20 
+6 -> 21 
+6 -> 27 
+9 -> 10 
+10 -> 11 
+10 -> 14 
+10 -> 22 
+10 -> 23 
+10 -> 25 
+12 -> 21 
+16 -> 21 
+21 -> 26 
+} 
+----- Graph 197 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+0 -> 20 
+0 -> 21 
+0 -> 22 
+0 -> 23 
+0 -> 24 
+0 -> 25 
+0 -> 26 
+0 -> 27 
+0 -> 28 
+0 -> 29 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 29
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+0 -> 20 
+0 -> 21 
+0 -> 22 
+0 -> 23 
+0 -> 24 
+0 -> 25 
+0 -> 26 
+0 -> 27 
+0 -> 28 
+0 -> 29 
+} 
+----- Graph 198 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 5 
+0 -> 4 
+1 -> 2 
+1 -> 3 
+2 -> 5 
+2 -> 3 
+2 -> 6 
+3 -> 4 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 4
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 5 
+0 -> 4 
+1 -> 2 
+1 -> 3 
+2 -> 6 
+} 
+----- Graph 199 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+1 -> 2 
+1 -> 5 
+2 -> 3 
+2 -> 7 
+3 -> 4 
+4 -> 5 
+4 -> 6 
+6 -> 7 
+6 -> 8 
+6 -> 9 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 7
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 4 
+3 -> 4 
+4 -> 5 
+4 -> 6 
+6 -> 7 
+6 -> 8 
+6 -> 9 
+} 
+----- Graph 200 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+1 -> 6 
+2 -> 3 
+4 -> 5 
+4 -> 6 
+5 -> 7 
+6 -> 7 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 4
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+1 -> 6 
+4 -> 6 
+4 -> 5 
+6 -> 7 
+} 
+----- Graph 201 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+1 -> 4 
+2 -> 3 
+3 -> 9 
+3 -> 8 
+4 -> 9 
+5 -> 9 
+6 -> 9 
+7 -> 9 
+8 -> 9 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 11
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+1 -> 4 
+3 -> 9 
+4 -> 9 
+5 -> 9 
+6 -> 9 
+7 -> 9 
+8 -> 9 
+} 
+----- Graph 202 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+0 -> 1 
+1 -> 7 
+1 -> 14 
+2 -> 3 
+2 -> 12 
+3 -> 4 
+4 -> 5 
+4 -> 10 
+5 -> 9 
+5 -> 12 
+5 -> 6 
+7 -> 8 
+7 -> 15 
+8 -> 14 
+10 -> 11 
+10 -> 13 
+14 -> 15 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 8
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+0 -> 1 
+1 -> 7 
+1 -> 14 
+2 -> 3 
+2 -> 12 
+3 -> 4 
+4 -> 5 
+4 -> 10 
+5 -> 9 
+5 -> 6 
+7 -> 8 
+7 -> 15 
+10 -> 11 
+10 -> 13 
+} 
+----- Graph 203 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 9 
+1 -> 3 
+2 -> 12 
+2 -> 5 
+3 -> 4 
+3 -> 6 
+5 -> 7 
+5 -> 8 
+5 -> 13 
+5 -> 12 
+5 -> 15 
+6 -> 9 
+7 -> 9 
+8 -> 15 
+8 -> 14 
+8 -> 11 
+9 -> 10 
+9 -> 11 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 10
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 9 
+1 -> 3 
+2 -> 5 
+3 -> 4 
+3 -> 6 
+5 -> 13 
+5 -> 12 
+5 -> 8 
+7 -> 9 
+8 -> 15 
+8 -> 14 
+8 -> 11 
+9 -> 10 
+9 -> 11 
+} 
+----- Graph 204 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 22 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 16 
+2 -> 6 
+2 -> 7 
+2 -> 8 
+8 -> 13 
+8 -> 12 
+9 -> 10 
+9 -> 22 
+10 -> 16 
+10 -> 18 
+10 -> 13 
+10 -> 15 
+11 -> 18 
+12 -> 18 
+14 -> 15 
+15 -> 20 
+15 -> 21 
+17 -> 21 
+18 -> 19 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 15
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 22 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 16 
+2 -> 6 
+2 -> 7 
+2 -> 8 
+9 -> 10 
+10 -> 18 
+10 -> 13 
+10 -> 15 
+10 -> 16 
+11 -> 18 
+12 -> 18 
+14 -> 15 
+15 -> 20 
+15 -> 21 
+17 -> 21 
+18 -> 19 
+} 
+----- Graph 205 / 524 -----
+Omitting input graph viz for size - 342 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 79
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 206 / 524 -----
+Omitting input graph viz for size - 382 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 207 / 524 -----
+Omitting input graph viz for size - 473 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 208 / 524 -----
+Omitting input graph viz for size - 464 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 209 / 524 -----
+Omitting input graph viz for size - 1930 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 74 > 50 edges
+----- Graph 210 / 524 -----
+Omitting input graph viz for size - 283 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 78 > 50 edges
+----- Graph 211 / 524 -----
+Omitting input graph viz for size - 571 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 61
+Final Tree:
+Omitting solution graph viz for size - 66 > 50 edges
+----- Graph 212 / 524 -----
+Omitting input graph viz for size - 355 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 51
+Final Tree:
+Omitting solution graph viz for size - 56 > 50 edges
+----- Graph 213 / 524 -----
+Omitting input graph viz for size - 316 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 25
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 16 
+0 -> 4 
+0 -> 12 
+0 -> 23 
+0 -> 14 
+0 -> 5 
+0 -> 1 
+0 -> 7 
+0 -> 13 
+0 -> 25 
+0 -> 11 
+0 -> 17 
+0 -> 15 
+0 -> 20 
+0 -> 26 
+0 -> 22 
+0 -> 3 
+0 -> 21 
+0 -> 18 
+0 -> 24 
+0 -> 6 
+0 -> 2 
+0 -> 9 
+0 -> 8 
+0 -> 10 
+1 -> 19 
+} 
+----- Graph 214 / 524 -----
+Omitting input graph viz for size - 1166 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 93
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 215 / 524 -----
+Omitting input graph viz for size - 119 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 32
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 17 
+0 -> 10 
+0 -> 34 
+0 -> 14 
+0 -> 1 
+2 -> 11 
+3 -> 40 
+3 -> 20 
+3 -> 22 
+3 -> 15 
+3 -> 37 
+3 -> 38 
+3 -> 28 
+4 -> 28 
+5 -> 10 
+6 -> 10 
+7 -> 31 
+8 -> 29 
+9 -> 26 
+10 -> 26 
+10 -> 28 
+10 -> 24 
+11 -> 39 
+11 -> 41 
+11 -> 34 
+12 -> 28 
+13 -> 34 
+16 -> 28 
+18 -> 38 
+19 -> 31 
+21 -> 34 
+23 -> 26 
+25 -> 38 
+27 -> 31 
+28 -> 30 
+29 -> 32 
+29 -> 35 
+29 -> 34 
+31 -> 34 
+33 -> 34 
+34 -> 36 
+} 
+----- Graph 216 / 524 -----
+Omitting input graph viz for size - 1025 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 87
+Final Tree:
+Omitting solution graph viz for size - 93 > 50 edges
+----- Graph 217 / 524 -----
+Omitting input graph viz for size - 593 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 37
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 5 
+1 -> 5 
+2 -> 7 
+3 -> 5 
+4 -> 5 
+5 -> 33 
+5 -> 18 
+5 -> 34 
+5 -> 17 
+5 -> 25 
+5 -> 29 
+5 -> 26 
+5 -> 9 
+5 -> 11 
+5 -> 37 
+5 -> 16 
+5 -> 36 
+5 -> 22 
+5 -> 38 
+5 -> 14 
+5 -> 20 
+5 -> 32 
+5 -> 24 
+5 -> 12 
+5 -> 28 
+5 -> 10 
+5 -> 35 
+5 -> 7 
+5 -> 21 
+5 -> 8 
+5 -> 13 
+5 -> 6 
+5 -> 27 
+5 -> 30 
+5 -> 31 
+5 -> 15 
+7 -> 19 
+7 -> 23 
+} 
+----- Graph 218 / 524 -----
+Omitting input graph viz for size - 1353 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 52
+Final Tree:
+Omitting solution graph viz for size - 52 > 50 edges
+----- Graph 219 / 524 -----
+Omitting input graph viz for size - 299 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 24
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 12 
+0 -> 1 
+0 -> 23 
+0 -> 9 
+0 -> 16 
+0 -> 5 
+0 -> 2 
+0 -> 24 
+0 -> 17 
+0 -> 21 
+0 -> 8 
+0 -> 13 
+0 -> 14 
+0 -> 4 
+0 -> 22 
+0 -> 6 
+0 -> 3 
+0 -> 10 
+0 -> 18 
+0 -> 15 
+0 -> 19 
+0 -> 20 
+0 -> 11 
+0 -> 7 
+} 
+----- Graph 220 / 524 -----
+Omitting input graph viz for size - 1495 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 85
+Final Tree:
+Omitting solution graph viz for size - 89 > 50 edges
+----- Graph 221 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 10 
+0 -> 7 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 3 
+0 -> 9 
+0 -> 1 
+0 -> 2 
+1 -> 10 
+1 -> 4 
+1 -> 6 
+1 -> 2 
+1 -> 8 
+1 -> 7 
+1 -> 5 
+1 -> 3 
+1 -> 9 
+2 -> 4 
+2 -> 7 
+2 -> 8 
+2 -> 10 
+3 -> 9 
+3 -> 6 
+3 -> 5 
+3 -> 4 
+3 -> 10 
+3 -> 7 
+4 -> 5 
+4 -> 7 
+4 -> 6 
+4 -> 9 
+5 -> 10 
+5 -> 7 
+5 -> 9 
+5 -> 8 
+5 -> 6 
+6 -> 8 
+6 -> 7 
+6 -> 10 
+6 -> 9 
+7 -> 10 
+7 -> 9 
+7 -> 8 
+8 -> 9 
+9 -> 10 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 10
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 7 
+1 -> 7 
+2 -> 7 
+3 -> 7 
+4 -> 7 
+5 -> 7 
+6 -> 7 
+7 -> 10 
+7 -> 9 
+7 -> 8 
+} 
+----- Graph 222 / 524 -----
+Omitting input graph viz for size - 640 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 94 > 50 edges
+----- Graph 223 / 524 -----
+Omitting input graph viz for size - 311 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 29
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 29 
+0 -> 20 
+0 -> 27 
+1 -> 29 
+1 -> 18 
+1 -> 21 
+1 -> 6 
+1 -> 22 
+1 -> 23 
+1 -> 16 
+1 -> 30 
+2 -> 29 
+3 -> 29 
+4 -> 29 
+5 -> 29 
+7 -> 29 
+8 -> 29 
+9 -> 29 
+10 -> 29 
+11 -> 29 
+12 -> 29 
+13 -> 29 
+14 -> 29 
+15 -> 29 
+17 -> 29 
+19 -> 29 
+24 -> 29 
+25 -> 29 
+26 -> 29 
+28 -> 29 
+29 -> 31 
+} 
+----- Graph 224 / 524 -----
+Omitting input graph viz for size - 1116 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 49
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 35 
+1 -> 35 
+2 -> 35 
+3 -> 35 
+4 -> 35 
+5 -> 35 
+6 -> 35 
+7 -> 35 
+8 -> 35 
+9 -> 35 
+10 -> 35 
+11 -> 35 
+12 -> 35 
+13 -> 35 
+14 -> 35 
+15 -> 35 
+16 -> 35 
+17 -> 35 
+18 -> 35 
+19 -> 35 
+20 -> 35 
+21 -> 35 
+22 -> 35 
+23 -> 35 
+24 -> 35 
+25 -> 35 
+26 -> 35 
+27 -> 35 
+28 -> 35 
+29 -> 35 
+30 -> 35 
+31 -> 35 
+32 -> 35 
+33 -> 35 
+34 -> 35 
+35 -> 49 
+35 -> 42 
+35 -> 36 
+35 -> 44 
+35 -> 37 
+35 -> 48 
+35 -> 38 
+35 -> 43 
+35 -> 46 
+35 -> 41 
+35 -> 45 
+35 -> 47 
+35 -> 40 
+35 -> 39 
+} 
+----- Graph 225 / 524 -----
+Omitting input graph viz for size - 1592 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 70 > 50 edges
+----- Graph 226 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 3 
+0 -> 11 
+0 -> 6 
+0 -> 5 
+0 -> 12 
+0 -> 2 
+0 -> 7 
+0 -> 8 
+0 -> 1 
+1 -> 8 
+1 -> 2 
+1 -> 10 
+1 -> 5 
+1 -> 11 
+1 -> 4 
+1 -> 3 
+1 -> 9 
+1 -> 12 
+2 -> 8 
+2 -> 9 
+2 -> 6 
+2 -> 12 
+2 -> 4 
+3 -> 6 
+3 -> 8 
+3 -> 12 
+4 -> 6 
+4 -> 8 
+4 -> 10 
+4 -> 11 
+5 -> 12 
+5 -> 8 
+5 -> 10 
+5 -> 7 
+5 -> 9 
+6 -> 10 
+6 -> 8 
+6 -> 9 
+7 -> 8 
+7 -> 9 
+7 -> 11 
+7 -> 10 
+8 -> 12 
+8 -> 11 
+8 -> 10 
+8 -> 9 
+10 -> 12 
+10 -> 11 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 12
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 8 
+1 -> 8 
+2 -> 8 
+3 -> 8 
+4 -> 8 
+5 -> 8 
+6 -> 8 
+7 -> 8 
+8 -> 12 
+8 -> 11 
+8 -> 10 
+8 -> 9 
+} 
+----- Graph 227 / 524 -----
+Omitting input graph viz for size - 178 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 23
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 13 
+0 -> 1 
+0 -> 24 
+0 -> 23 
+0 -> 22 
+0 -> 20 
+0 -> 12 
+0 -> 6 
+0 -> 21 
+0 -> 8 
+0 -> 4 
+0 -> 10 
+0 -> 5 
+0 -> 19 
+0 -> 16 
+0 -> 17 
+0 -> 3 
+0 -> 9 
+0 -> 7 
+0 -> 18 
+2 -> 13 
+11 -> 13 
+13 -> 15 
+13 -> 14 
+} 
+----- Graph 228 / 524 -----
+Omitting input graph viz for size - 88 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 15
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 9 
+1 -> 9 
+2 -> 9 
+3 -> 5 
+4 -> 5 
+5 -> 9 
+5 -> 8 
+6 -> 9 
+7 -> 9 
+9 -> 15 
+9 -> 14 
+9 -> 11 
+9 -> 10 
+9 -> 12 
+9 -> 16 
+9 -> 13 
+} 
+----- Graph 229 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 5 
+0 -> 2 
+1 -> 6 
+1 -> 3 
+1 -> 4 
+2 -> 4 
+2 -> 5 
+2 -> 7 
+2 -> 3 
+3 -> 4 
+3 -> 7 
+4 -> 6 
+4 -> 7 
+5 -> 7 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 6
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+1 -> 4 
+2 -> 4 
+2 -> 5 
+2 -> 7 
+2 -> 3 
+4 -> 6 
+} 
+----- Graph 230 / 524 -----
+Omitting input graph viz for size - 148 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 49
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 231 / 524 -----
+Omitting input graph viz for size - 195 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 66
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 232 / 524 -----
+Omitting input graph viz for size - 295 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 233 / 524 -----
+Omitting input graph viz for size - 1030 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 234 / 524 -----
+Omitting input graph viz for size - 1275 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 235 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+2 -> 3 
+2 -> 4 
+} 
+Going with brute force
+Final Leaves: 3
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+2 -> 4 
+} 
+----- Graph 236 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+2 -> 3 
+2 -> 4 
+3 -> 5 
+4 -> 5 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 3
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+2 -> 4 
+3 -> 5 
+} 
+----- Graph 237 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+} 
+Going with brute force
+Final Leaves: 5
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+} 
+----- Graph 238 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+1 -> 2 
+1 -> 4 
+1 -> 5 
+2 -> 3 
+2 -> 4 
+3 -> 4 
+4 -> 5 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 5
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+} 
+----- Graph 239 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+----- Graph 240 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 3 
+2 -> 3 
+2 -> 4 
+3 -> 5 
+4 -> 5 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 4
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+1 -> 3 
+2 -> 3 
+2 -> 4 
+3 -> 5 
+} 
+----- Graph 241 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 6 
+0 -> 7 
+0 -> 14 
+1 -> 2 
+1 -> 4 
+1 -> 8 
+2 -> 3 
+2 -> 9 
+3 -> 5 
+4 -> 6 
+4 -> 11 
+5 -> 7 
+7 -> 16 
+8 -> 9 
+8 -> 11 
+9 -> 10 
+9 -> 12 
+10 -> 13 
+12 -> 15 
+14 -> 15 
+15 -> 16 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 8
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 6 
+0 -> 7 
+0 -> 14 
+1 -> 2 
+1 -> 8 
+1 -> 4 
+2 -> 3 
+2 -> 9 
+4 -> 11 
+4 -> 6 
+5 -> 7 
+7 -> 16 
+9 -> 10 
+9 -> 12 
+10 -> 13 
+14 -> 15 
+} 
+----- Graph 242 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+0 -> 4 
+1 -> 2 
+1 -> 4 
+2 -> 4 
+2 -> 5 
+3 -> 6 
+3 -> 7 
+4 -> 7 
+5 -> 8 
+6 -> 9 
+7 -> 8 
+7 -> 9 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 6
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 4 
+1 -> 4 
+2 -> 4 
+2 -> 5 
+3 -> 7 
+3 -> 6 
+4 -> 7 
+7 -> 8 
+7 -> 9 
+} 
+----- Graph 243 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 5 
+0 -> 7 
+1 -> 2 
+1 -> 7 
+2 -> 3 
+2 -> 4 
+2 -> 5 
+2 -> 7 
+3 -> 4 
+4 -> 5 
+4 -> 6 
+5 -> 6 
+6 -> 7 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 6
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 5 
+1 -> 2 
+2 -> 5 
+2 -> 3 
+2 -> 7 
+4 -> 5 
+5 -> 6 
+} 
+----- Graph 244 / 524 -----
+Omitting input graph viz for size - 99 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 245 / 524 -----
+Omitting input graph viz for size - 980 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 48
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 26 
+1 -> 3 
+2 -> 26 
+3 -> 26 
+3 -> 24 
+3 -> 43 
+3 -> 47 
+4 -> 26 
+5 -> 26 
+6 -> 26 
+7 -> 26 
+8 -> 26 
+9 -> 26 
+10 -> 26 
+11 -> 26 
+12 -> 26 
+13 -> 26 
+14 -> 26 
+15 -> 26 
+16 -> 26 
+17 -> 26 
+18 -> 26 
+19 -> 26 
+20 -> 26 
+21 -> 26 
+22 -> 26 
+23 -> 26 
+25 -> 26 
+26 -> 27 
+26 -> 28 
+26 -> 29 
+26 -> 30 
+26 -> 31 
+26 -> 32 
+26 -> 33 
+26 -> 34 
+26 -> 35 
+26 -> 36 
+26 -> 37 
+26 -> 38 
+26 -> 39 
+26 -> 40 
+26 -> 41 
+26 -> 42 
+26 -> 44 
+26 -> 45 
+26 -> 46 
+26 -> 48 
+26 -> 49 
+} 
+----- Graph 246 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+1 -> 2 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 6 
+1 -> 7 
+1 -> 8 
+1 -> 9 
+2 -> 3 
+2 -> 4 
+2 -> 5 
+2 -> 6 
+2 -> 7 
+2 -> 9 
+3 -> 4 
+3 -> 5 
+3 -> 6 
+3 -> 7 
+3 -> 8 
+4 -> 5 
+4 -> 6 
+4 -> 7 
+4 -> 8 
+4 -> 9 
+5 -> 6 
+5 -> 8 
+5 -> 9 
+6 -> 7 
+6 -> 9 
+7 -> 8 
+7 -> 9 
+8 -> 9 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 9
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 3 
+1 -> 4 
+1 -> 5 
+1 -> 6 
+1 -> 7 
+1 -> 8 
+1 -> 9 
+} 
+----- Graph 247 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 3 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 3 
+} 
+----- Graph 248 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 3 
+1 -> 4 
+2 -> 4 
+2 -> 5 
+3 -> 6 
+3 -> 5 
+4 -> 5 
+4 -> 6 
+5 -> 7 
+6 -> 7 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 5
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 3 
+1 -> 4 
+2 -> 4 
+4 -> 5 
+4 -> 6 
+5 -> 7 
+} 
+----- Graph 249 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 3 
+1 -> 4 
+2 -> 4 
+2 -> 5 
+3 -> 6 
+3 -> 5 
+4 -> 7 
+4 -> 6 
+5 -> 8 
+5 -> 6 
+6 -> 8 
+7 -> 8 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 6
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 3 
+1 -> 4 
+2 -> 4 
+4 -> 7 
+4 -> 6 
+5 -> 6 
+6 -> 8 
+} 
+----- Graph 250 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 6 
+1 -> 3 
+1 -> 4 
+2 -> 4 
+2 -> 5 
+3 -> 6 
+4 -> 5 
+5 -> 6 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 4
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 6 
+1 -> 3 
+1 -> 4 
+2 -> 5 
+} 
+----- Graph 251 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 5 
+1 -> 3 
+1 -> 4 
+2 -> 4 
+2 -> 3 
+3 -> 5 
+4 -> 5 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 4
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 5 
+1 -> 3 
+1 -> 4 
+} 
+----- Graph 252 / 524 -----
+Omitting input graph viz for size - 147 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 46
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 253 / 524 -----
+Omitting input graph viz for size - 164 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 95 > 50 edges
+----- Graph 254 / 524 -----
+Omitting input graph viz for size - 170 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 59
+Final Tree:
+Omitting solution graph viz for size - 95 > 50 edges
+----- Graph 255 / 524 -----
+Omitting input graph viz for size - 212 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 95 > 50 edges
+----- Graph 256 / 524 -----
+Omitting input graph viz for size - 190 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 88
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 257 / 524 -----
+Omitting input graph viz for size - 99 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 2
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 258 / 524 -----
+Omitting input graph viz for size - 160 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 84 > 50 edges
+----- Graph 259 / 524 -----
+Omitting input graph viz for size - 166 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 70
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 260 / 524 -----
+Omitting input graph viz for size - 125 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 261 / 524 -----
+Omitting input graph viz for size - 1705 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 262 / 524 -----
+Omitting input graph viz for size - 654 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 88
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 263 / 524 -----
+Omitting input graph viz for size - 1836 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 264 / 524 -----
+Omitting input graph viz for size - 737 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 265 / 524 -----
+Omitting input graph viz for size - 711 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 90
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 266 / 524 -----
+Omitting input graph viz for size - 966 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 90
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 267 / 524 -----
+Omitting input graph viz for size - 322 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 268 / 524 -----
+Omitting input graph viz for size - 298 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 269 / 524 -----
+Omitting input graph viz for size - 164 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 56
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 270 / 524 -----
+Omitting input graph viz for size - 282 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 74
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 271 / 524 -----
+Omitting input graph viz for size - 217 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 57
+Final Tree:
+Omitting solution graph viz for size - 75 > 50 edges
+----- Graph 272 / 524 -----
+Omitting input graph viz for size - 325 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 75
+Final Tree:
+Omitting solution graph viz for size - 92 > 50 edges
+----- Graph 273 / 524 -----
+Omitting input graph viz for size - 226 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 63
+Final Tree:
+Omitting solution graph viz for size - 85 > 50 edges
+----- Graph 274 / 524 -----
+Omitting input graph viz for size - 220 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 275 / 524 -----
+Omitting input graph viz for size - 204 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 88 > 50 edges
+----- Graph 276 / 524 -----
+Omitting input graph viz for size - 496 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 76
+Final Tree:
+Omitting solution graph viz for size - 90 > 50 edges
+----- Graph 277 / 524 -----
+Omitting input graph viz for size - 388 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 71
+Final Tree:
+Omitting solution graph viz for size - 87 > 50 edges
+----- Graph 278 / 524 -----
+Omitting input graph viz for size - 437 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 73
+Final Tree:
+Omitting solution graph viz for size - 81 > 50 edges
+----- Graph 279 / 524 -----
+Omitting input graph viz for size - 364 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 74
+Final Tree:
+Omitting solution graph viz for size - 93 > 50 edges
+----- Graph 280 / 524 -----
+Omitting input graph viz for size - 568 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 70
+Final Tree:
+Omitting solution graph viz for size - 79 > 50 edges
+----- Graph 281 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 8 
+0 -> 14 
+1 -> 6 
+1 -> 19 
+2 -> 4 
+2 -> 5 
+2 -> 11 
+3 -> 17 
+3 -> 19 
+5 -> 14 
+5 -> 16 
+6 -> 14 
+6 -> 15 
+6 -> 18 
+7 -> 10 
+9 -> 15 
+10 -> 12 
+10 -> 15 
+13 -> 19 
+15 -> 17 
+16 -> 17 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 11
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 14 
+0 -> 8 
+1 -> 6 
+1 -> 19 
+2 -> 5 
+2 -> 4 
+2 -> 11 
+3 -> 19 
+5 -> 14 
+5 -> 16 
+6 -> 14 
+6 -> 15 
+6 -> 18 
+7 -> 10 
+9 -> 15 
+10 -> 15 
+10 -> 12 
+13 -> 19 
+15 -> 17 
+} 
+----- Graph 282 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 283 / 524 -----
+Omitting input graph viz for size - 161 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 284 / 524 -----
+Omitting input graph viz for size - 182 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 93 > 50 edges
+----- Graph 285 / 524 -----
+Omitting input graph viz for size - 360 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 286 / 524 -----
+Omitting input graph viz for size - 444 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 82
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 287 / 524 -----
+Omitting input graph viz for size - 375 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 288 / 524 -----
+Omitting input graph viz for size - 391 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 289 / 524 -----
+Omitting input graph viz for size - 358 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 290 / 524 -----
+Omitting input graph viz for size - 372 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 291 / 524 -----
+Omitting input graph viz for size - 376 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 292 / 524 -----
+Omitting input graph viz for size - 369 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 293 / 524 -----
+Omitting input graph viz for size - 148 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 294 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 295 / 524 -----
+Omitting input graph viz for size - 1693 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 296 / 524 -----
+Omitting input graph viz for size - 1717 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 297 / 524 -----
+Omitting input graph viz for size - 1710 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 298 / 524 -----
+Omitting input graph viz for size - 1682 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 299 / 524 -----
+Omitting input graph viz for size - 1696 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 300 / 524 -----
+Omitting input graph viz for size - 1701 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 301 / 524 -----
+Omitting input graph viz for size - 1690 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 302 / 524 -----
+Omitting input graph viz for size - 1702 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 303 / 524 -----
+Omitting input graph viz for size - 1674 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 304 / 524 -----
+Omitting input graph viz for size - 1700 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 305 / 524 -----
+Omitting input graph viz for size - 1714 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 306 / 524 -----
+Omitting input graph viz for size - 1703 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 307 / 524 -----
+Omitting input graph viz for size - 1711 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 308 / 524 -----
+Omitting input graph viz for size - 1705 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 309 / 524 -----
+Omitting input graph viz for size - 1691 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 310 / 524 -----
+Omitting input graph viz for size - 1702 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 311 / 524 -----
+Omitting input graph viz for size - 1695 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 312 / 524 -----
+Omitting input graph viz for size - 1689 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 313 / 524 -----
+Omitting input graph viz for size - 1693 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 314 / 524 -----
+Omitting input graph viz for size - 1673 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 315 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 8 
+0 -> 11 
+1 -> 4 
+1 -> 5 
+1 -> 9 
+1 -> 10 
+1 -> 12 
+2 -> 7 
+2 -> 8 
+2 -> 10 
+2 -> 11 
+3 -> 5 
+4 -> 5 
+4 -> 6 
+4 -> 9 
+5 -> 6 
+5 -> 12 
+6 -> 8 
+6 -> 9 
+6 -> 12 
+7 -> 8 
+7 -> 9 
+8 -> 9 
+8 -> 10 
+8 -> 11 
+10 -> 11 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 10
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 8 
+1 -> 5 
+2 -> 8 
+3 -> 5 
+4 -> 6 
+5 -> 6 
+6 -> 8 
+6 -> 12 
+7 -> 8 
+8 -> 9 
+8 -> 10 
+8 -> 11 
+} 
+----- Graph 316 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 7 
+0 -> 12 
+0 -> 15 
+0 -> 16 
+1 -> 15 
+2 -> 14 
+3 -> 16 
+4 -> 10 
+4 -> 13 
+4 -> 18 
+5 -> 8 
+5 -> 11 
+5 -> 19 
+6 -> 10 
+7 -> 11 
+7 -> 13 
+8 -> 16 
+9 -> 10 
+14 -> 18 
+15 -> 17 
+16 -> 18 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 11
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 7 
+0 -> 12 
+0 -> 15 
+0 -> 16 
+1 -> 15 
+2 -> 14 
+3 -> 16 
+4 -> 10 
+4 -> 13 
+4 -> 18 
+5 -> 11 
+5 -> 19 
+5 -> 8 
+6 -> 10 
+8 -> 16 
+9 -> 10 
+14 -> 18 
+15 -> 17 
+16 -> 18 
+} 
+----- Graph 317 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+} 
+----- Graph 318 / 524 -----
+Omitting input graph viz for size - 99 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 99
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 319 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 320 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 321 / 524 -----
+Omitting input graph viz for size - 350 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 322 / 524 -----
+Omitting input graph viz for size - 342 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 323 / 524 -----
+Omitting input graph viz for size - 339 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 75
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 324 / 524 -----
+Omitting input graph viz for size - 343 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 325 / 524 -----
+Omitting input graph viz for size - 352 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 76
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 326 / 524 -----
+Omitting input graph viz for size - 358 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 76
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 327 / 524 -----
+Omitting input graph viz for size - 347 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 76
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 328 / 524 -----
+Omitting input graph viz for size - 345 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 76
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 329 / 524 -----
+Omitting input graph viz for size - 300 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 73
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 330 / 524 -----
+Omitting input graph viz for size - 379 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 79
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 331 / 524 -----
+Omitting input graph viz for size - 380 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 332 / 524 -----
+Omitting input graph viz for size - 372 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 76
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 333 / 524 -----
+Omitting input graph viz for size - 376 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 334 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 17 
+1 -> 8 
+1 -> 13 
+1 -> 18 
+2 -> 16 
+3 -> 8 
+4 -> 7 
+4 -> 14 
+4 -> 19 
+5 -> 6 
+5 -> 10 
+5 -> 14 
+6 -> 13 
+8 -> 14 
+8 -> 15 
+9 -> 16 
+10 -> 17 
+11 -> 14 
+12 -> 18 
+13 -> 16 
+15 -> 17 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 11
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 17 
+1 -> 13 
+1 -> 18 
+1 -> 8 
+2 -> 16 
+3 -> 8 
+4 -> 7 
+4 -> 19 
+4 -> 14 
+5 -> 14 
+6 -> 13 
+8 -> 14 
+8 -> 15 
+9 -> 16 
+10 -> 17 
+11 -> 14 
+12 -> 18 
+13 -> 16 
+15 -> 17 
+} 
+----- Graph 335 / 524 -----
+Omitting input graph viz for size - 50 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 17
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 11 
+1 -> 11 
+2 -> 11 
+3 -> 9 
+4 -> 9 
+5 -> 9 
+6 -> 9 
+7 -> 9 
+8 -> 11 
+9 -> 11 
+9 -> 16 
+9 -> 17 
+9 -> 18 
+9 -> 19 
+10 -> 12 
+11 -> 12 
+11 -> 13 
+11 -> 14 
+12 -> 15 
+} 
+----- Graph 336 / 524 -----
+Omitting input graph viz for size - 100 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 38
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 12 
+0 -> 20 
+0 -> 23 
+0 -> 24 
+0 -> 26 
+0 -> 31 
+0 -> 35 
+0 -> 38 
+0 -> 41 
+0 -> 48 
+1 -> 16 
+1 -> 2 
+1 -> 14 
+1 -> 37 
+2 -> 13 
+2 -> 34 
+2 -> 47 
+3 -> 35 
+4 -> 22 
+5 -> 14 
+6 -> 35 
+6 -> 17 
+7 -> 19 
+8 -> 19 
+9 -> 35 
+10 -> 12 
+11 -> 16 
+12 -> 22 
+12 -> 28 
+13 -> 21 
+14 -> 33 
+14 -> 43 
+14 -> 44 
+14 -> 49 
+15 -> 16 
+16 -> 19 
+18 -> 35 
+19 -> 35 
+19 -> 32 
+19 -> 39 
+19 -> 42 
+22 -> 40 
+25 -> 34 
+27 -> 34 
+29 -> 35 
+30 -> 35 
+34 -> 36 
+35 -> 45 
+35 -> 46 
+} 
+----- Graph 337 / 524 -----
+Omitting input graph viz for size - 363 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 75
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 338 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 65
+Final Tree:
+Omitting solution graph viz for size - 79 > 50 edges
+----- Graph 339 / 524 -----
+Omitting input graph viz for size - 333 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 340 / 524 -----
+Omitting input graph viz for size - 276 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 89 > 50 edges
+----- Graph 341 / 524 -----
+Omitting input graph viz for size - 423 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 82
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 342 / 524 -----
+Omitting input graph viz for size - 1007 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 92
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 343 / 524 -----
+Omitting input graph viz for size - 477 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 344 / 524 -----
+Omitting input graph viz for size - 367 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 345 / 524 -----
+Omitting input graph viz for size - 484 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 83
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 346 / 524 -----
+Omitting input graph viz for size - 404 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 82
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 347 / 524 -----
+Omitting input graph viz for size - 796 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 92
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 348 / 524 -----
+Omitting input graph viz for size - 174 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 96 > 50 edges
+----- Graph 349 / 524 -----
+Omitting input graph viz for size - 174 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 79
+Final Tree:
+Omitting solution graph viz for size - 96 > 50 edges
+----- Graph 350 / 524 -----
+Omitting input graph viz for size - 174 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 96 > 50 edges
+----- Graph 351 / 524 -----
+Omitting input graph viz for size - 165 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 352 / 524 -----
+Omitting input graph viz for size - 2000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 353 / 524 -----
+Omitting input graph viz for size - 196 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 98
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 354 / 524 -----
+Omitting input graph viz for size - 220 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 355 / 524 -----
+Omitting input graph viz for size - 135 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 90 > 50 edges
+----- Graph 356 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 3 
+0 -> 5 
+0 -> 9 
+1 -> 3 
+1 -> 5 
+1 -> 6 
+2 -> 4 
+2 -> 6 
+2 -> 7 
+2 -> 8 
+3 -> 5 
+3 -> 6 
+3 -> 8 
+4 -> 6 
+4 -> 7 
+6 -> 9 
+7 -> 10 
+8 -> 9 
+8 -> 10 
+9 -> 10 
+} 
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 8
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 3 
+1 -> 3 
+2 -> 4 
+2 -> 6 
+2 -> 7 
+2 -> 8 
+3 -> 5 
+3 -> 8 
+8 -> 9 
+8 -> 10 
+} 
+----- Graph 357 / 524 -----
+Omitting input graph viz for size - 780 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 39
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+0 -> 20 
+0 -> 21 
+0 -> 22 
+0 -> 23 
+0 -> 24 
+0 -> 25 
+0 -> 26 
+0 -> 27 
+0 -> 28 
+0 -> 29 
+0 -> 30 
+0 -> 31 
+0 -> 32 
+0 -> 33 
+0 -> 34 
+0 -> 35 
+0 -> 36 
+0 -> 37 
+0 -> 38 
+0 -> 39 
+} 
+----- Graph 358 / 524 -----
+Omitting input graph viz for size - 149 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 359 / 524 -----
+Omitting input graph viz for size - 155 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 360 / 524 -----
+Omitting input graph viz for size - 148 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 85
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 361 / 524 -----
+Omitting input graph viz for size - 120 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 362 / 524 -----
+Omitting input graph viz for size - 131 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 363 / 524 -----
+Omitting input graph viz for size - 507 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 81
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 364 / 524 -----
+Omitting input graph viz for size - 479 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 365 / 524 -----
+Omitting input graph viz for size - 459 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 366 / 524 -----
+Omitting input graph viz for size - 459 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 81
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 367 / 524 -----
+Omitting input graph viz for size - 413 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 98 > 50 edges
+----- Graph 368 / 524 -----
+Omitting input graph viz for size - 359 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 78
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 369 / 524 -----
+Omitting input graph viz for size - 326 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 74
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 370 / 524 -----
+Omitting input graph viz for size - 399 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 79
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 371 / 524 -----
+Omitting input graph viz for size - 312 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 76
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 372 / 524 -----
+Omitting input graph viz for size - 381 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 79
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 373 / 524 -----
+Omitting input graph viz for size - 280 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 71
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 374 / 524 -----
+Omitting input graph viz for size - 307 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 73
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 375 / 524 -----
+Omitting input graph viz for size - 343 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 376 / 524 -----
+Omitting input graph viz for size - 1770 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 59
+Final Tree:
+Omitting solution graph viz for size - 59 > 50 edges
+----- Graph 377 / 524 -----
+Omitting input graph viz for size - 673 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 378 / 524 -----
+Omitting input graph viz for size - 512 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 379 / 524 -----
+Omitting input graph viz for size - 203 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 380 / 524 -----
+Omitting input graph viz for size - 170 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 53
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 381 / 524 -----
+Omitting input graph viz for size - 213 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 382 / 524 -----
+Omitting input graph viz for size - 246 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 383 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 384 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 66
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 385 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 386 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 66
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 387 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 388 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 389 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 65
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 390 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 391 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 71
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 392 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 393 / 524 -----
+Omitting input graph viz for size - 328 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 73 > 50 edges
+----- Graph 394 / 524 -----
+Omitting input graph viz for size - 169 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 59
+Final Tree:
+Omitting solution graph viz for size - 97 > 50 edges
+----- Graph 395 / 524 -----
+Omitting input graph viz for size - 270 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 88 > 50 edges
+----- Graph 396 / 524 -----
+Omitting input graph viz for size - 237 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 69
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 397 / 524 -----
+Omitting input graph viz for size - 171 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 51
+Final Tree:
+Omitting solution graph viz for size - 73 > 50 edges
+----- Graph 398 / 524 -----
+Omitting input graph viz for size - 237 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 87 > 50 edges
+----- Graph 399 / 524 -----
+Omitting input graph viz for size - 226 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 71
+Final Tree:
+Omitting solution graph viz for size - 88 > 50 edges
+----- Graph 400 / 524 -----
+Omitting input graph viz for size - 102 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 28
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 28 
+1 -> 28 
+2 -> 28 
+3 -> 26 
+4 -> 19 
+5 -> 7 
+6 -> 23 
+7 -> 12 
+7 -> 24 
+7 -> 27 
+7 -> 29 
+7 -> 28 
+8 -> 29 
+9 -> 38 
+9 -> 12 
+10 -> 19 
+11 -> 28 
+12 -> 15 
+12 -> 34 
+13 -> 28 
+14 -> 24 
+16 -> 22 
+16 -> 40 
+16 -> 19 
+17 -> 28 
+18 -> 28 
+19 -> 28 
+20 -> 27 
+21 -> 24 
+23 -> 25 
+23 -> 35 
+23 -> 28 
+26 -> 43 
+26 -> 27 
+29 -> 31 
+30 -> 31 
+31 -> 32 
+33 -> 34 
+35 -> 36 
+37 -> 38 
+38 -> 39 
+40 -> 41 
+42 -> 43 
+43 -> 44 
+} 
+----- Graph 401 / 524 -----
+Omitting input graph viz for size - 323 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 54
+Final Tree:
+Omitting solution graph viz for size - 62 > 50 edges
+----- Graph 402 / 524 -----
+Omitting input graph viz for size - 452 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 59
+Final Tree:
+Omitting solution graph viz for size - 65 > 50 edges
+----- Graph 403 / 524 -----
+Omitting input graph viz for size - 423 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 74
+Final Tree:
+Omitting solution graph viz for size - 86 > 50 edges
+----- Graph 404 / 524 -----
+Omitting input graph viz for size - 489 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 83
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 405 / 524 -----
+Omitting input graph viz for size - 1570 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 406 / 524 -----
+Omitting input graph viz for size - 87 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 46
+Final Tree:
+Omitting solution graph viz for size - 72 > 50 edges
+----- Graph 407 / 524 -----
+Omitting input graph viz for size - 236 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 78 > 50 edges
+----- Graph 408 / 524 -----
+Omitting input graph viz for size - 112 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 39
+Final Tree:
+Omitting solution graph viz for size - 87 > 50 edges
+----- Graph 409 / 524 -----
+Omitting input graph viz for size - 111 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 48
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 410 / 524 -----
+Omitting input graph viz for size - 101 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 58
+Final Tree:
+Omitting solution graph viz for size - 95 > 50 edges
+----- Graph 411 / 524 -----
+Omitting input graph viz for size - 1948 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 412 / 524 -----
+Omitting input graph viz for size - 93 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 37
+Final Tree:
+Omitting solution graph viz for size - 80 > 50 edges
+----- Graph 413 / 524 -----
+Omitting input graph viz for size - 106 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 49
+Final Tree:
+Omitting solution graph viz for size - 80 > 50 edges
+----- Graph 414 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 11 
+0 -> 19 
+0 -> 25 
+1 -> 16 
+1 -> 24 
+2 -> 4 
+2 -> 5 
+2 -> 9 
+2 -> 23 
+3 -> 7 
+3 -> 9 
+3 -> 13 
+3 -> 19 
+4 -> 16 
+5 -> 7 
+5 -> 21 
+6 -> 7 
+6 -> 9 
+6 -> 27 
+6 -> 28 
+7 -> 20 
+8 -> 20 
+8 -> 29 
+9 -> 10 
+9 -> 25 
+10 -> 14 
+10 -> 27 
+10 -> 28 
+11 -> 22 
+12 -> 14 
+12 -> 21 
+12 -> 26 
+13 -> 28 
+14 -> 26 
+15 -> 18 
+15 -> 27 
+17 -> 18 
+18 -> 23 
+18 -> 25 
+18 -> 26 
+21 -> 23 
+22 -> 25 
+23 -> 26 
+24 -> 29 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 15
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 25 
+0 -> 11 
+1 -> 16 
+1 -> 24 
+2 -> 9 
+2 -> 4 
+2 -> 5 
+3 -> 9 
+3 -> 7 
+3 -> 13 
+3 -> 19 
+4 -> 16 
+5 -> 21 
+6 -> 9 
+7 -> 20 
+8 -> 20 
+8 -> 29 
+9 -> 25 
+9 -> 10 
+10 -> 14 
+10 -> 27 
+10 -> 28 
+12 -> 14 
+15 -> 18 
+17 -> 18 
+18 -> 25 
+18 -> 23 
+18 -> 26 
+22 -> 25 
+} 
+----- Graph 415 / 524 -----
+Omitting input graph viz for size - 87 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 23
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 16 
+0 -> 22 
+0 -> 26 
+0 -> 27 
+1 -> 5 
+2 -> 22 
+3 -> 14 
+4 -> 22 
+5 -> 9 
+5 -> 11 
+5 -> 18 
+5 -> 19 
+5 -> 29 
+5 -> 16 
+6 -> 14 
+7 -> 22 
+8 -> 10 
+8 -> 13 
+8 -> 17 
+8 -> 25 
+12 -> 14 
+14 -> 15 
+14 -> 24 
+14 -> 22 
+16 -> 21 
+16 -> 23 
+16 -> 25 
+20 -> 22 
+25 -> 28 
+} 
+----- Graph 416 / 524 -----
+Omitting input graph viz for size - 131 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 26
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 28 
+1 -> 6 
+2 -> 6 
+3 -> 28 
+4 -> 15 
+5 -> 28 
+6 -> 8 
+6 -> 11 
+6 -> 14 
+6 -> 15 
+6 -> 17 
+6 -> 21 
+6 -> 23 
+6 -> 29 
+7 -> 29 
+9 -> 29 
+10 -> 15 
+12 -> 28 
+13 -> 28 
+15 -> 18 
+15 -> 19 
+16 -> 28 
+20 -> 29 
+22 -> 28 
+24 -> 28 
+25 -> 29 
+26 -> 28 
+27 -> 29 
+28 -> 29 
+} 
+----- Graph 417 / 524 -----
+Omitting input graph viz for size - 218 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 27
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+1 -> 9 
+2 -> 5 
+2 -> 6 
+2 -> 7 
+2 -> 8 
+2 -> 9 
+2 -> 11 
+2 -> 13 
+2 -> 15 
+2 -> 16 
+2 -> 17 
+2 -> 18 
+2 -> 19 
+2 -> 21 
+2 -> 23 
+2 -> 24 
+2 -> 26 
+2 -> 28 
+3 -> 12 
+4 -> 12 
+9 -> 10 
+9 -> 12 
+9 -> 20 
+9 -> 22 
+9 -> 25 
+9 -> 29 
+12 -> 14 
+12 -> 27 
+} 
+----- Graph 418 / 524 -----
+Omitting input graph viz for size - 305 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 28
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 10 
+0 -> 4 
+0 -> 5 
+0 -> 21 
+0 -> 25 
+0 -> 29 
+1 -> 10 
+2 -> 10 
+3 -> 10 
+6 -> 10 
+7 -> 10 
+8 -> 10 
+9 -> 10 
+10 -> 11 
+10 -> 12 
+10 -> 13 
+10 -> 14 
+10 -> 15 
+10 -> 16 
+10 -> 17 
+10 -> 18 
+10 -> 19 
+10 -> 20 
+10 -> 22 
+10 -> 23 
+10 -> 24 
+10 -> 26 
+10 -> 27 
+10 -> 28 
+} 
+----- Graph 419 / 524 -----
+Omitting input graph viz for size - 61 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 19
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 34 
+1 -> 43 
+2 -> 46 
+2 -> 24 
+3 -> 35 
+3 -> 21 
+3 -> 25 
+4 -> 41 
+5 -> 25 
+6 -> 9 
+6 -> 47 
+7 -> 35 
+7 -> 22 
+7 -> 33 
+8 -> 10 
+9 -> 12 
+9 -> 35 
+10 -> 15 
+11 -> 34 
+12 -> 34 
+12 -> 18 
+13 -> 45 
+13 -> 43 
+14 -> 36 
+15 -> 20 
+15 -> 42 
+16 -> 39 
+16 -> 45 
+17 -> 31 
+17 -> 30 
+17 -> 39 
+19 -> 27 
+19 -> 28 
+20 -> 35 
+21 -> 46 
+21 -> 49 
+22 -> 40 
+23 -> 26 
+23 -> 48 
+25 -> 38 
+25 -> 44 
+26 -> 29 
+27 -> 32 
+28 -> 41 
+29 -> 31 
+29 -> 36 
+31 -> 46 
+32 -> 36 
+32 -> 37 
+} 
+----- Graph 420 / 524 -----
+Omitting input graph viz for size - 123 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 30 
+0 -> 4 
+1 -> 28 
+2 -> 41 
+3 -> 40 
+5 -> 19 
+6 -> 30 
+6 -> 15 
+6 -> 24 
+6 -> 45 
+7 -> 15 
+8 -> 49 
+9 -> 18 
+10 -> 12 
+11 -> 18 
+12 -> 30 
+12 -> 13 
+12 -> 21 
+12 -> 23 
+12 -> 40 
+12 -> 41 
+14 -> 30 
+16 -> 41 
+16 -> 44 
+17 -> 40 
+18 -> 30 
+18 -> 27 
+18 -> 29 
+18 -> 31 
+18 -> 37 
+19 -> 24 
+19 -> 26 
+19 -> 28 
+20 -> 30 
+22 -> 24 
+24 -> 33 
+24 -> 46 
+25 -> 28 
+28 -> 49 
+30 -> 35 
+30 -> 47 
+31 -> 48 
+32 -> 41 
+34 -> 49 
+36 -> 40 
+38 -> 41 
+39 -> 41 
+40 -> 43 
+41 -> 42 
+} 
+----- Graph 421 / 524 -----
+Omitting input graph viz for size - 245 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 43
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 12 
+1 -> 20 
+2 -> 23 
+3 -> 42 
+4 -> 12 
+5 -> 48 
+5 -> 15 
+5 -> 31 
+6 -> 42 
+7 -> 20 
+7 -> 19 
+7 -> 33 
+7 -> 45 
+7 -> 46 
+8 -> 12 
+9 -> 12 
+10 -> 42 
+11 -> 48 
+12 -> 16 
+12 -> 17 
+12 -> 21 
+12 -> 24 
+12 -> 25 
+12 -> 26 
+12 -> 36 
+12 -> 37 
+12 -> 39 
+12 -> 41 
+12 -> 42 
+12 -> 47 
+13 -> 42 
+14 -> 23 
+18 -> 42 
+20 -> 42 
+20 -> 32 
+20 -> 40 
+20 -> 44 
+22 -> 42 
+23 -> 42 
+23 -> 34 
+27 -> 48 
+28 -> 48 
+29 -> 48 
+30 -> 48 
+35 -> 48 
+38 -> 48 
+42 -> 43 
+42 -> 48 
+48 -> 49 
+} 
+----- Graph 422 / 524 -----
+Omitting input graph viz for size - 368 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 45
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 31 
+1 -> 30 
+2 -> 41 
+3 -> 31 
+4 -> 31 
+5 -> 31 
+6 -> 41 
+7 -> 31 
+8 -> 26 
+9 -> 41 
+10 -> 30 
+11 -> 31 
+12 -> 15 
+13 -> 31 
+14 -> 31 
+15 -> 26 
+15 -> 45 
+16 -> 26 
+17 -> 41 
+18 -> 41 
+19 -> 31 
+20 -> 30 
+21 -> 31 
+22 -> 31 
+23 -> 41 
+24 -> 31 
+25 -> 31 
+26 -> 41 
+26 -> 29 
+26 -> 32 
+26 -> 33 
+26 -> 36 
+26 -> 37 
+26 -> 48 
+27 -> 41 
+28 -> 41 
+30 -> 41 
+30 -> 34 
+31 -> 38 
+31 -> 41 
+31 -> 42 
+31 -> 43 
+31 -> 44 
+31 -> 47 
+31 -> 49 
+35 -> 41 
+39 -> 41 
+40 -> 41 
+41 -> 46 
+} 
+----- Graph 423 / 524 -----
+Omitting input graph viz for size - 613 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 46
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 45 
+1 -> 39 
+1 -> 2 
+1 -> 24 
+1 -> 29 
+1 -> 33 
+3 -> 45 
+3 -> 11 
+4 -> 45 
+5 -> 39 
+6 -> 45 
+7 -> 39 
+8 -> 45 
+9 -> 45 
+10 -> 45 
+12 -> 45 
+13 -> 45 
+14 -> 45 
+15 -> 45 
+16 -> 45 
+17 -> 45 
+18 -> 39 
+19 -> 45 
+20 -> 39 
+21 -> 45 
+22 -> 45 
+23 -> 39 
+25 -> 39 
+26 -> 45 
+27 -> 39 
+28 -> 45 
+30 -> 45 
+31 -> 45 
+32 -> 39 
+34 -> 39 
+35 -> 45 
+36 -> 45 
+37 -> 39 
+38 -> 39 
+39 -> 45 
+39 -> 44 
+40 -> 45 
+41 -> 45 
+42 -> 45 
+43 -> 45 
+45 -> 46 
+45 -> 47 
+45 -> 48 
+45 -> 49 
+} 
+----- Graph 424 / 524 -----
+Omitting input graph viz for size - 858 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 48
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 45 
+1 -> 45 
+2 -> 45 
+3 -> 45 
+4 -> 45 
+4 -> 6 
+4 -> 24 
+4 -> 27 
+4 -> 31 
+4 -> 32 
+4 -> 37 
+4 -> 44 
+5 -> 45 
+7 -> 45 
+8 -> 45 
+9 -> 45 
+10 -> 45 
+11 -> 45 
+12 -> 45 
+13 -> 45 
+14 -> 45 
+15 -> 45 
+16 -> 45 
+17 -> 45 
+18 -> 45 
+19 -> 45 
+20 -> 45 
+21 -> 45 
+22 -> 45 
+23 -> 45 
+25 -> 45 
+26 -> 45 
+28 -> 45 
+29 -> 45 
+30 -> 45 
+33 -> 45 
+34 -> 45 
+35 -> 45 
+36 -> 45 
+38 -> 45 
+39 -> 45 
+40 -> 45 
+41 -> 45 
+42 -> 45 
+43 -> 45 
+45 -> 46 
+45 -> 47 
+45 -> 48 
+45 -> 49 
+} 
+----- Graph 425 / 524 -----
+Omitting input graph viz for size - 121 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 40
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 426 / 524 -----
+Omitting input graph viz for size - 242 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 57
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 427 / 524 -----
+Omitting input graph viz for size - 483 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 428 / 524 -----
+Omitting input graph viz for size - 725 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 64
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 429 / 524 -----
+Omitting input graph viz for size - 1208 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 430 / 524 -----
+Omitting input graph viz for size - 1691 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 431 / 524 -----
+Omitting input graph viz for size - 248 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 432 / 524 -----
+Omitting input graph viz for size - 495 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 86
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 433 / 524 -----
+Omitting input graph viz for size - 990 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 92
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 434 / 524 -----
+Omitting input graph viz for size - 1485 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 93
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 435 / 524 -----
+Omitting input graph viz for size - 2475 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 96
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 436 / 524 -----
+Omitting input graph viz for size - 3465 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 97
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 437 / 524 -----
+Omitting input graph viz for size - 1953 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 62 > 50 edges
+----- Graph 438 / 524 -----
+Omitting input graph viz for size - 118 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 58
+Final Tree:
+Omitting solution graph viz for size - 88 > 50 edges
+----- Graph 439 / 524 -----
+Omitting input graph viz for size - 200 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 440 / 524 -----
+Omitting input graph viz for size - 250 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 441 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 23 
+1 -> 24 
+1 -> 29 
+2 -> 3 
+2 -> 5 
+2 -> 11 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+6 -> 7 
+7 -> 8 
+7 -> 11 
+7 -> 20 
+8 -> 9 
+9 -> 10 
+9 -> 27 
+10 -> 11 
+10 -> 20 
+10 -> 28 
+11 -> 12 
+11 -> 27 
+12 -> 13 
+12 -> 21 
+12 -> 23 
+13 -> 14 
+14 -> 15 
+15 -> 16 
+16 -> 17 
+17 -> 18 
+18 -> 19 
+19 -> 20 
+20 -> 21 
+21 -> 22 
+22 -> 23 
+22 -> 25 
+23 -> 24 
+24 -> 25 
+24 -> 26 
+25 -> 26 
+26 -> 27 
+27 -> 28 
+28 -> 29 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 15
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 23 
+1 -> 24 
+1 -> 29 
+2 -> 3 
+2 -> 5 
+2 -> 11 
+3 -> 4 
+6 -> 7 
+7 -> 11 
+7 -> 8 
+7 -> 20 
+9 -> 27 
+10 -> 11 
+11 -> 12 
+11 -> 27 
+12 -> 13 
+12 -> 21 
+13 -> 14 
+14 -> 15 
+15 -> 16 
+16 -> 17 
+17 -> 18 
+18 -> 19 
+21 -> 22 
+22 -> 25 
+26 -> 27 
+27 -> 28 
+} 
+----- Graph 442 / 524 -----
+Omitting input graph viz for size - 725 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 65
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 443 / 524 -----
+Omitting input graph viz for size - 483 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 444 / 524 -----
+Omitting input graph viz for size - 858 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 48
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 11 
+1 -> 11 
+2 -> 11 
+3 -> 11 
+4 -> 5 
+5 -> 11 
+5 -> 18 
+5 -> 19 
+5 -> 21 
+5 -> 27 
+5 -> 28 
+5 -> 42 
+6 -> 11 
+7 -> 11 
+8 -> 11 
+9 -> 11 
+10 -> 11 
+11 -> 12 
+11 -> 13 
+11 -> 14 
+11 -> 15 
+11 -> 16 
+11 -> 17 
+11 -> 20 
+11 -> 22 
+11 -> 23 
+11 -> 24 
+11 -> 25 
+11 -> 26 
+11 -> 29 
+11 -> 30 
+11 -> 31 
+11 -> 32 
+11 -> 33 
+11 -> 34 
+11 -> 35 
+11 -> 36 
+11 -> 37 
+11 -> 38 
+11 -> 39 
+11 -> 40 
+11 -> 41 
+11 -> 43 
+11 -> 44 
+11 -> 45 
+11 -> 46 
+11 -> 47 
+11 -> 48 
+11 -> 49 
+} 
+----- Graph 445 / 524 -----
+Omitting input graph viz for size - 1208 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 446 / 524 -----
+Omitting input graph viz for size - 305 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 28
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 12 
+1 -> 12 
+2 -> 12 
+3 -> 4 
+4 -> 12 
+4 -> 5 
+4 -> 14 
+4 -> 24 
+4 -> 29 
+6 -> 12 
+7 -> 12 
+8 -> 12 
+9 -> 12 
+10 -> 12 
+11 -> 12 
+12 -> 13 
+12 -> 15 
+12 -> 16 
+12 -> 17 
+12 -> 18 
+12 -> 19 
+12 -> 20 
+12 -> 21 
+12 -> 22 
+12 -> 23 
+12 -> 25 
+12 -> 26 
+12 -> 27 
+12 -> 28 
+} 
+----- Graph 447 / 524 -----
+Omitting input graph viz for size - 61 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 19
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+2 -> 3 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+5 -> 46 
+6 -> 7 
+8 -> 10 
+9 -> 10 
+10 -> 11 
+11 -> 18 
+11 -> 12 
+11 -> 42 
+12 -> 13 
+13 -> 14 
+13 -> 29 
+14 -> 15 
+16 -> 17 
+17 -> 26 
+17 -> 18 
+18 -> 19 
+19 -> 20 
+19 -> 30 
+19 -> 31 
+20 -> 21 
+21 -> 22 
+23 -> 24 
+24 -> 46 
+24 -> 25 
+25 -> 26 
+25 -> 33 
+26 -> 27 
+27 -> 28 
+32 -> 33 
+33 -> 34 
+34 -> 35 
+35 -> 36 
+36 -> 37 
+37 -> 38 
+38 -> 39 
+39 -> 40 
+41 -> 42 
+42 -> 43 
+43 -> 44 
+43 -> 48 
+45 -> 46 
+46 -> 47 
+48 -> 49 
+} 
+----- Graph 448 / 524 -----
+Omitting input graph viz for size - 123 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 42 
+1 -> 2 
+2 -> 42 
+2 -> 3 
+2 -> 13 
+2 -> 29 
+2 -> 34 
+3 -> 4 
+3 -> 6 
+3 -> 8 
+3 -> 31 
+3 -> 45 
+5 -> 29 
+6 -> 24 
+7 -> 8 
+8 -> 9 
+8 -> 10 
+8 -> 16 
+8 -> 17 
+8 -> 46 
+8 -> 48 
+11 -> 44 
+11 -> 20 
+11 -> 22 
+11 -> 27 
+12 -> 42 
+14 -> 26 
+14 -> 15 
+18 -> 45 
+19 -> 20 
+20 -> 21 
+23 -> 45 
+25 -> 26 
+26 -> 42 
+28 -> 29 
+29 -> 30 
+29 -> 37 
+32 -> 45 
+32 -> 38 
+33 -> 44 
+35 -> 44 
+36 -> 45 
+39 -> 44 
+40 -> 42 
+41 -> 42 
+42 -> 43 
+44 -> 45 
+47 -> 48 
+48 -> 49 
+} 
+----- Graph 449 / 524 -----
+Omitting input graph viz for size - 1691 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 67
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 450 / 524 -----
+Omitting input graph viz for size - 218 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 27
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 5 
+1 -> 5 
+2 -> 5 
+2 -> 17 
+2 -> 27 
+3 -> 5 
+4 -> 5 
+5 -> 6 
+5 -> 7 
+5 -> 10 
+5 -> 11 
+5 -> 12 
+5 -> 13 
+5 -> 16 
+5 -> 18 
+5 -> 21 
+5 -> 22 
+5 -> 23 
+5 -> 24 
+5 -> 25 
+5 -> 26 
+5 -> 28 
+8 -> 13 
+9 -> 13 
+13 -> 14 
+13 -> 15 
+13 -> 19 
+13 -> 20 
+13 -> 29 
+} 
+----- Graph 451 / 524 -----
+Omitting input graph viz for size - 245 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 42
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 35 
+1 -> 2 
+2 -> 35 
+2 -> 3 
+2 -> 6 
+2 -> 8 
+2 -> 17 
+2 -> 21 
+2 -> 25 
+2 -> 30 
+2 -> 33 
+2 -> 46 
+3 -> 4 
+5 -> 24 
+7 -> 8 
+8 -> 9 
+8 -> 19 
+8 -> 27 
+8 -> 39 
+8 -> 41 
+8 -> 43 
+8 -> 44 
+8 -> 45 
+10 -> 24 
+11 -> 33 
+12 -> 33 
+13 -> 25 
+14 -> 35 
+14 -> 49 
+15 -> 35 
+16 -> 35 
+18 -> 25 
+20 -> 35 
+22 -> 35 
+23 -> 35 
+24 -> 25 
+24 -> 29 
+25 -> 26 
+25 -> 42 
+28 -> 35 
+31 -> 35 
+32 -> 33 
+33 -> 48 
+34 -> 35 
+35 -> 36 
+35 -> 37 
+35 -> 38 
+35 -> 40 
+35 -> 47 
+} 
+----- Graph 452 / 524 -----
+Omitting input graph viz for size - 368 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 44
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 5 
+0 -> 16 
+1 -> 5 
+2 -> 42 
+3 -> 42 
+3 -> 39 
+3 -> 49 
+4 -> 5 
+5 -> 6 
+5 -> 7 
+5 -> 12 
+5 -> 13 
+5 -> 15 
+5 -> 21 
+5 -> 22 
+5 -> 26 
+5 -> 28 
+5 -> 32 
+5 -> 33 
+5 -> 36 
+5 -> 41 
+5 -> 42 
+5 -> 44 
+5 -> 48 
+8 -> 19 
+9 -> 22 
+10 -> 22 
+11 -> 42 
+14 -> 19 
+17 -> 22 
+18 -> 22 
+19 -> 22 
+19 -> 20 
+19 -> 31 
+19 -> 34 
+22 -> 23 
+22 -> 24 
+22 -> 29 
+22 -> 35 
+22 -> 37 
+22 -> 38 
+22 -> 46 
+22 -> 47 
+25 -> 42 
+27 -> 42 
+30 -> 42 
+40 -> 42 
+42 -> 43 
+42 -> 45 
+} 
+----- Graph 453 / 524 -----
+Omitting input graph viz for size - 131 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 26
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 24 
+1 -> 21 
+2 -> 5 
+3 -> 5 
+4 -> 5 
+5 -> 6 
+5 -> 11 
+5 -> 13 
+5 -> 24 
+7 -> 21 
+8 -> 24 
+9 -> 11 
+10 -> 11 
+11 -> 18 
+11 -> 21 
+11 -> 28 
+12 -> 24 
+14 -> 24 
+15 -> 24 
+16 -> 24 
+17 -> 24 
+19 -> 24 
+20 -> 21 
+21 -> 22 
+21 -> 26 
+21 -> 29 
+23 -> 24 
+24 -> 25 
+24 -> 27 
+} 
+----- Graph 454 / 524 -----
+Omitting input graph viz for size - 121 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 40
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 455 / 524 -----
+Omitting input graph viz for size - 242 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 55
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 456 / 524 -----
+Omitting input graph viz for size - 613 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 47
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 36 
+1 -> 36 
+2 -> 25 
+3 -> 36 
+4 -> 25 
+5 -> 36 
+6 -> 25 
+7 -> 36 
+8 -> 25 
+9 -> 25 
+10 -> 48 
+11 -> 36 
+12 -> 36 
+13 -> 25 
+14 -> 36 
+15 -> 25 
+16 -> 48 
+17 -> 36 
+18 -> 48 
+19 -> 36 
+20 -> 25 
+21 -> 36 
+22 -> 36 
+23 -> 48 
+24 -> 36 
+25 -> 36 
+25 -> 27 
+25 -> 31 
+25 -> 38 
+25 -> 40 
+25 -> 49 
+26 -> 36 
+28 -> 36 
+29 -> 36 
+30 -> 36 
+32 -> 36 
+33 -> 36 
+34 -> 36 
+35 -> 36 
+36 -> 37 
+36 -> 39 
+36 -> 41 
+36 -> 42 
+36 -> 43 
+36 -> 44 
+36 -> 45 
+36 -> 46 
+36 -> 47 
+36 -> 48 
+} 
+----- Graph 457 / 524 -----
+Omitting input graph viz for size - 87 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 23
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+1 -> 2 
+1 -> 9 
+1 -> 24 
+3 -> 4 
+3 -> 15 
+3 -> 17 
+3 -> 28 
+3 -> 23 
+5 -> 9 
+6 -> 23 
+7 -> 19 
+8 -> 9 
+9 -> 10 
+9 -> 11 
+9 -> 19 
+9 -> 20 
+12 -> 28 
+13 -> 24 
+14 -> 23 
+16 -> 24 
+18 -> 19 
+19 -> 26 
+21 -> 23 
+22 -> 23 
+23 -> 24 
+24 -> 25 
+27 -> 28 
+28 -> 29 
+} 
+----- Graph 458 / 524 -----
+Omitting input graph viz for size - 1554 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 459 / 524 -----
+Omitting input graph viz for size - 100 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 51
+Final Tree:
+Omitting solution graph viz for size - 91 > 50 edges
+----- Graph 460 / 524 -----
+Omitting input graph viz for size - 137 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 461 / 524 -----
+Omitting input graph viz for size - 1207 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 66
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 462 / 524 -----
+Omitting input graph viz for size - 1587 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 91
+Final Tree:
+Omitting solution graph viz for size - 95 > 50 edges
+----- Graph 463 / 524 -----
+Omitting input graph viz for size - 775 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 70
+Final Tree:
+Omitting solution graph viz for size - 70 > 50 edges
+----- Graph 464 / 524 -----
+Omitting input graph viz for size - 89 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+Omitting solution graph viz for size - 62 > 50 edges
+----- Graph 465 / 524 -----
+Omitting input graph viz for size - 1722 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 86
+Final Tree:
+Omitting solution graph viz for size - 89 > 50 edges
+----- Graph 466 / 524 -----
+Omitting input graph viz for size - 197 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 87 > 50 edges
+----- Graph 467 / 524 -----
+Omitting input graph viz for size - 1404 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 88
+Final Tree:
+Omitting solution graph viz for size - 93 > 50 edges
+----- Graph 468 / 524 -----
+Omitting input graph viz for size - 61 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 11
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 2 
+1 -> 2 
+2 -> 8 
+2 -> 5 
+2 -> 11 
+2 -> 4 
+2 -> 7 
+2 -> 10 
+2 -> 3 
+2 -> 9 
+2 -> 6 
+} 
+----- Graph 469 / 524 -----
+Omitting input graph viz for size - 102 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 14
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 5 
+0 -> 14 
+0 -> 7 
+0 -> 9 
+0 -> 2 
+0 -> 11 
+0 -> 4 
+0 -> 13 
+0 -> 6 
+0 -> 8 
+0 -> 1 
+0 -> 10 
+0 -> 3 
+0 -> 12 
+} 
+----- Graph 470 / 524 -----
+Omitting input graph viz for size - 180 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 471 / 524 -----
+Omitting input graph viz for size - 103 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 52
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 472 / 524 -----
+Omitting input graph viz for size - 144 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 48
+Final Tree:
+Omitting solution graph viz for size - 80 > 50 edges
+----- Graph 473 / 524 -----
+Omitting input graph viz for size - 97 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 21
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 23 
+0 -> 16 
+0 -> 2 
+0 -> 13 
+0 -> 22 
+0 -> 6 
+0 -> 1 
+0 -> 12 
+0 -> 21 
+3 -> 19 
+4 -> 16 
+5 -> 19 
+7 -> 16 
+8 -> 19 
+9 -> 19 
+10 -> 19 
+11 -> 16 
+14 -> 16 
+15 -> 16 
+16 -> 20 
+16 -> 17 
+16 -> 19 
+16 -> 18 
+} 
+----- Graph 474 / 524 -----
+Omitting input graph viz for size - 474 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 83
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 475 / 524 -----
+Omitting input graph viz for size - 501 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 85
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 476 / 524 -----
+Omitting input graph viz for size - 477 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 83
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 477 / 524 -----
+Omitting input graph viz for size - 505 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 86
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 478 / 524 -----
+Omitting input graph viz for size - 518 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 479 / 524 -----
+Omitting input graph viz for size - 471 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 83
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 480 / 524 -----
+Omitting input graph viz for size - 490 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 481 / 524 -----
+Omitting input graph viz for size - 474 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 86
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 482 / 524 -----
+Omitting input graph viz for size - 543 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 87
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 483 / 524 -----
+Omitting input graph viz for size - 491 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 484 / 524 -----
+Omitting input graph viz for size - 342 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 79
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 485 / 524 -----
+Omitting input graph viz for size - 382 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 486 / 524 -----
+Omitting input graph viz for size - 473 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 487 / 524 -----
+Omitting input graph viz for size - 464 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 488 / 524 -----
+Omitting input graph viz for size - 1930 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 72
+Final Tree:
+Omitting solution graph viz for size - 74 > 50 edges
+----- Graph 489 / 524 -----
+Omitting input graph viz for size - 201 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 68
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 490 / 524 -----
+Omitting input graph viz for size - 1393 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 93
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 491 / 524 -----
+Omitting input graph viz for size - 391 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 87
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 492 / 524 -----
+Omitting input graph viz for size - 1000 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 91
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 493 / 524 -----
+Omitting input graph viz for size - 1914 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 95
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 494 / 524 -----
+Omitting input graph viz for size - 700 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 89
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 495 / 524 -----
+Omitting input graph viz for size - 1235 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 94
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 496 / 524 -----
+Omitting input graph viz for size - 132 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 43
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 497 / 524 -----
+Omitting input graph viz for size - 150 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 51
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 498 / 524 -----
+Omitting input graph viz for size - 363 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 77
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 499 / 524 -----
+Omitting input graph viz for size - 90 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 31
+Final Tree:
+Omitting solution graph viz for size - 69 > 50 edges
+----- Graph 500 / 524 -----
+Omitting input graph viz for size - 110 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+Omitting solution graph viz for size - 64 > 50 edges
+----- Graph 501 / 524 -----
+Omitting input graph viz for size - 1953 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 62
+Final Tree:
+Omitting solution graph viz for size - 62 > 50 edges
+----- Graph 502 / 524 -----
+Omitting input graph viz for size - 180 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 503 / 524 -----
+Omitting input graph viz for size - 400 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 82
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 504 / 524 -----
+Omitting input graph viz for size - 1936 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 86
+Final Tree:
+Omitting solution graph viz for size - 87 > 50 edges
+----- Graph 505 / 524 -----
+Omitting input graph viz for size - 1988 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 82
+Final Tree:
+Omitting solution graph viz for size - 84 > 50 edges
+----- Graph 506 / 524 -----
+Omitting input graph viz for size - 65 > 50 edges
+Too big for brute force
+Trying greedy
+LP did best
+Final Leaves: 20
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 20 
+1 -> 20 
+2 -> 20 
+3 -> 20 
+4 -> 21 
+5 -> 21 
+6 -> 21 
+7 -> 21 
+8 -> 22 
+9 -> 22 
+10 -> 22 
+11 -> 22 
+12 -> 23 
+13 -> 23 
+14 -> 23 
+15 -> 23 
+16 -> 24 
+17 -> 24 
+18 -> 24 
+19 -> 24 
+20 -> 25 
+21 -> 25 
+22 -> 25 
+23 -> 25 
+24 -> 25 
+} 
+----- Graph 507 / 524 -----
+Omitting input graph viz for size - 502 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 85
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 508 / 524 -----
+Omitting input graph viz for size - 471 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 84
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 509 / 524 -----
+Omitting input graph viz for size - 500 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 85
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 510 / 524 -----
+Omitting input graph viz for size - 485 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 85
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 511 / 524 -----
+Omitting input graph viz for size - 488 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 86
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 512 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+1 -> 2 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+} 
+----- Graph 513 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+2 -> 3 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+} 
+----- Graph 514 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+2 -> 3 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+} 
+----- Graph 515 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+2 -> 3 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+} 
+----- Graph 516 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+2 -> 3 
+} 
+Going with brute force
+Final Leaves: 2
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 3 
+1 -> 2 
+} 
+----- Graph 517 / 524 -----
+Omitting input graph viz for size - 1275 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 50
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 518 / 524 -----
+Omitting input graph viz for size - 704 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 38
+Final Tree:
+Omitting solution graph viz for size - 74 > 50 edges
+----- Graph 519 / 524 -----
+Omitting input graph viz for size - 325 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 25
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+0 -> 20 
+0 -> 21 
+0 -> 22 
+0 -> 23 
+0 -> 24 
+0 -> 25 
+1 -> 26 
+2 -> 27 
+3 -> 28 
+4 -> 29 
+5 -> 30 
+6 -> 31 
+7 -> 32 
+8 -> 33 
+9 -> 34 
+10 -> 35 
+11 -> 36 
+12 -> 37 
+13 -> 38 
+14 -> 39 
+15 -> 40 
+16 -> 41 
+17 -> 42 
+18 -> 43 
+19 -> 44 
+20 -> 45 
+21 -> 46 
+22 -> 47 
+23 -> 48 
+24 -> 49 
+} 
+----- Graph 520 / 524 -----
+Omitting input graph viz for size - 99 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 49
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 521 / 524 -----
+Omitting input graph viz for size - 74 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 36
+Final Tree:
+Omitting solution graph viz for size - 74 > 50 edges
+----- Graph 522 / 524 -----
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+0 -> 20 
+0 -> 21 
+0 -> 22 
+0 -> 23 
+0 -> 24 
+24 -> 25 
+25 -> 26 
+26 -> 27 
+27 -> 28 
+28 -> 29 
+29 -> 30 
+30 -> 31 
+31 -> 32 
+32 -> 33 
+33 -> 34 
+34 -> 35 
+35 -> 36 
+36 -> 37 
+37 -> 38 
+38 -> 39 
+39 -> 40 
+40 -> 41 
+41 -> 42 
+42 -> 43 
+43 -> 44 
+44 -> 45 
+45 -> 46 
+46 -> 47 
+47 -> 48 
+48 -> 49 
+} 
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 24
+Final Tree:
+digraph G { 
+edge [dir = none] 
+0 -> 1 
+0 -> 2 
+0 -> 3 
+0 -> 4 
+0 -> 5 
+0 -> 6 
+0 -> 7 
+0 -> 8 
+0 -> 9 
+0 -> 10 
+0 -> 11 
+0 -> 12 
+0 -> 13 
+0 -> 14 
+0 -> 15 
+0 -> 16 
+0 -> 17 
+0 -> 18 
+0 -> 19 
+0 -> 20 
+0 -> 21 
+0 -> 22 
+0 -> 23 
+0 -> 24 
+24 -> 25 
+25 -> 26 
+26 -> 27 
+27 -> 28 
+28 -> 29 
+29 -> 30 
+30 -> 31 
+31 -> 32 
+32 -> 33 
+33 -> 34 
+34 -> 35 
+35 -> 36 
+36 -> 37 
+37 -> 38 
+38 -> 39 
+39 -> 40 
+40 -> 41 
+41 -> 42 
+42 -> 43 
+43 -> 44 
+44 -> 45 
+45 -> 46 
+46 -> 47 
+47 -> 48 
+48 -> 49 
+} 
+----- Graph 523 / 524 -----
+Omitting input graph viz for size - 219 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 80
+Final Tree:
+Omitting solution graph viz for size - 99 > 50 edges
+----- Graph 524 / 524 -----
+Omitting input graph viz for size - 164 > 50 edges
+Too big for brute force
+Trying greedy
+Greedy did best
+Final Leaves: 60
+Final Tree:
+Omitting solution graph viz for size - 74 > 50 edges
