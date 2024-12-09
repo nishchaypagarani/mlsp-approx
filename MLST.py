@@ -506,7 +506,7 @@ if __name__ == "__main__":
     # gen_hard_in("hard.in", fi_cases)
     # inps = get_input("hard.in")
     sols_ensembler = ensembler(inps,
-                               max_lp_nodes=50,
+                               max_lp_nodes=75,
                                log_short="log_short.txt",
                                log_long="log_long.txt",
                                progress_log="progress_log.txt")
