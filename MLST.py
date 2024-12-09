@@ -507,12 +507,12 @@ if __name__ == "__main__":
     # test_st_LP("test_lp.txt")
     # fi_cases = get_input("fi_hard.in")
     # gen_hard_in("hard.in", fi_cases)
-    # inps = get_input("hard.in")
-    sols_ensembler = ensembler(inps,
-                               max_lp_nodes=50,
-                               log_short="log_short.txt",
-                               log_long="log_long.txt",
-                               progress_log="progress_log.txt")
+    inps = get_input("hard.in")
+    # sols_ensembler = ensembler(inps,
+    #                            max_lp_nodes=50,
+    #                            log_short="log_short.txt",
+    #                            log_long="log_long.txt",
+    #                            progress_log="progress_log.txt")
     # test_ensembler(inps)
     # sols = solve_using_greedy(inps)
-    gen_output("all-hard.out", sols_ensembler)
+    # gen_output("all-hard.out", sols_ensembler)
