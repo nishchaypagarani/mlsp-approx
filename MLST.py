@@ -496,6 +496,46 @@ def get_all_hard_in(filename):
             cnt+=1
         # cnt should be 524 at end
     return graphs
+
+# triple check our all hard outs are valid spanning trees of their respective
+# graphs with correct leaf counts
+def test_all_hard_out(all_hard_inps: list[Graph], all_hard_out_file):
+    graphs: list[Graph] = list()
+    wrong = []
+    with open(all_hard_out_file) as fo:
+        cnt = 0
+        print("graph number | is a spanning tree | has right number of leaves")
+        for inp_graph in all_hard_inps:
+            print(f"{cnt+1}...", end=" ")
+            num_nodes = inp_graph.numberOfNodes
+            output_graph = Graph(num_nodes)
+            leaves, num_out_edges = list(map(int, fo.readline().split()))
+            # edges = []
+            for i in range(num_out_edges):
+                new_edge = list(map(int, fo.readline().split()))
+                output_graph.add_edge(new_edge)
+            # Check graph is a spanning tree
+            if inp_graph.st_checker(output_graph):
+                print("✅", end=" ")
+            else:
+                print("❌", end=" ")
+                wrong.append(cnt)
+            # Check the number of leaves correct
+            if calculate_number_of_leaves(output_graph) == leaves:
+                print("✅", end=" ")
+            else:
+                print("❌", end=" ")
+                wrong.append(cnt+1)
+            print("\n")
+            cnt += 1
+    print("\n")
+    if cnt != 524:
+        print("Wrong number of input and output instances")
+    else:
+        print("Right number of input and output instances")
+    print(f"{len(wrong)} incorrect outputs:")
+    print(wrong)
+
 if __name__ == "__main__":
     # test_st_greedy_ds()
     inps = get_all_hard_in("all-hard.in")
@@ -505,11 +545,12 @@ if __name__ == "__main__":
     # fi_cases = get_input("fi_hard.in")
     # gen_hard_in("hard.in", fi_cases)
     # inps = get_input("hard.in")
-    sols_ensembler = ensembler(inps,
-                               max_lp_nodes=75,
-                               log_short="log_short.txt",
-                               log_long="log_long.txt",
-                               progress_log="progress_log.txt")
+    # sols_ensembler = ensembler(inps,
+    #                            max_lp_nodes=75,
+    #                            log_short="log_short.txt",
+    #                            log_long="log_long.txt",
+    #                            progress_log="progress_log.txt")
     # test_ensembler(inps)
     # sols = solve_using_greedy(inps)
-    gen_output("all-hard.out", sols_ensembler)
+    # gen_output("all-hard.out", sols_ensembler)
+    test_all_hard_out(inps, "all-hard.out")
